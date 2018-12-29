@@ -1,0 +1,49 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://www.DataDoc5LB/DataDoc5LB">
+	<objectType name="StructuraTovar">
+		<property name="Tovar" type="xs:string"/>
+		<property name="Harakter" type="xs:string"/>
+		<property name="EdIzm" type="xs:string"/>
+		<property name="Kolich" type="xs:float"/>
+		<property name="StavkaNDS" type="xs:float"/>
+		<property name="Cena" type="xs:float"/>
+		<property name="Summa" type="xs:float"/>
+		<property name="SummaNDS" type="xs:float"/>
+	</objectType>
+	<objectType name="TzTovar" open="true">
+		<property xmlns:d3p1="http://www.DataDoc5LB/DataDoc5LB" name="Element" type="d3p1:StructuraTovar" upperBound="-1"/>
+	</objectType>
+	<objectType name="OneDocument">
+		<property xmlns:d3p1="http://www.DataDoc5LB/DataDoc5LB" name="TzTovar" type="d3p1:TzTovar"/>
+		<property name="VidDoc" type="xs:string"/>
+		<property name="NomerDoc" type="xs:string"/>
+		<property name="DataDoc" type="xs:dateTime"/>
+		<property name="Organization" type="xs:string"/>
+		<property name="Magazin" type="xs:string"/>
+		<property name="Prodavec" type="xs:string"/>
+		<property name="CenaVkluchaetNDS" type="xs:boolean"/>
+		<property name="Summa" type="xs:float"/>
+		<property name="NomerDocVozvrat" type="xs:string"/>
+		<property name="DataDocVozvrat" type="xs:dateTime"/>
+	</objectType>
+	<objectType name="Documents" open="true">
+		<property xmlns:d3p1="http://www.DataDoc5LB/DataDoc5LB" name="Element" type="d3p1:OneDocument" upperBound="-1"/>
+	</objectType>
+	<objectType name="StructureObjectDate">
+		<property name="Object" type="xs:string"/>
+		<property name="Date" type="xs:dateTime"/>
+	</objectType>
+	<objectType name="TzObjectDate">
+		<property xmlns:d3p1="http://www.DataDoc5LB/DataDoc5LB" name="Element" type="d3p1:StructureObjectDate" upperBound="-1"/>
+	</objectType>
+	<objectType name="StructurePayment">
+		<property name="TypeOfPayment" type="xs:string"/>
+		<property name="TypeOfOperation" type="xs:string"/>
+		<property name="Shop" type="xs:string"/>
+		<property name="Date" type="xs:date"/>
+		<property name="Seller" type="xs:string"/>
+		<property name="Summa" type="xs:float"/>
+	</objectType>
+	<objectType name="TzStructurePayment">
+		<property xmlns:d3p1="http://www.DataDoc5LB/DataDoc5LB" name="Element" type="d3p1:StructurePayment" upperBound="-1"/>
+	</objectType>
+</package>

@@ -1,0 +1,69 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="cwms3000.ru/in">
+	<import namespace="urn:cwms3000.ru:BaseTypes:1.0.0"/>
+	<property name="DOC">
+		<typeDef xsi:type="ObjectType">
+			<property name="DOC_IN" upperBound="-1">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="NUMBER" type="d6p1:Text255Type"/>
+					<property xmlns:d6p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="ID_DOC" type="d6p1:Text50Type"/>
+					<property xmlns:d6p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="DATE" type="d6p1:DateTimeType" lowerBound="0"/>
+					<property xmlns:d6p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="IN_DATE" type="d6p1:DateTimeType" lowerBound="0"/>
+					<property xmlns:d6p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="INVOICE" type="d6p1:Text255Type" lowerBound="0"/>
+					<property xmlns:d6p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="DOC_OUT_ID" type="d6p1:Text255Type" lowerBound="0"/>
+					<property xmlns:d6p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="INV_DATE" type="d6p1:DateType"/>
+					<property xmlns:d6p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="RESPONS_PERS" type="d6p1:Text100Type" lowerBound="0"/>
+					<property xmlns:d6p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="CAR_NUMBER" type="d6p1:Text100Type" lowerBound="0"/>
+					<property xmlns:d6p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="PALL" type="d6p1:Int01Type" lowerBound="0"/>
+					<property xmlns:d6p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="TYPE" type="d6p1:IntegerType"/>
+					<property xmlns:d6p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="DSC" type="d6p1:Text255Type" lowerBound="0"/>
+					<property xmlns:d6p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="CUSTOMER_ID" type="d6p1:Text255Type" lowerBound="0"/>
+					<property xmlns:d6p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="CUSTOMER" type="d6p1:Text255Type" lowerBound="0"/>
+					<property xmlns:d6p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="CUST_ADDRESS" type="d6p1:Text255Type" lowerBound="0"/>
+					<property xmlns:d6p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="URGENT" type="d6p1:IntegerType" lowerBound="0"/>
+					<property name="CONTENT">
+						<typeDef xsi:type="ObjectType">
+							<property name="CODE" upperBound="-1">
+								<typeDef xsi:type="ObjectType">
+									<property name="CODE_ID" type="xs:string" lowerBound="1" form="Attribute"/>
+									<property xmlns:d10p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="NAME" type="d10p1:Text255Type" lowerBound="0"/>
+									<property xmlns:d10p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="GROUP_NAME" type="d10p1:Text255Type" lowerBound="0"/>
+									<property xmlns:d10p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="UNIT_NAME" type="d10p1:Text100Type"/>
+									<property xmlns:d10p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="CNT" type="d10p1:NumericType"/>
+									<property name="ST_PART" lowerBound="0">
+										<typeDef xsi:type="ObjectType">
+											<property xmlns:d12p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="PART_NUM" type="d12p1:Text100Type"/>
+											<property name="EXT_PARAMS" lowerBound="0">
+												<typeDef xsi:type="ObjectType">
+													<property xmlns:d14p1="cwms3000.ru/in" name="PARAM" type="d14p1:ParamType" upperBound="-1"/>
+												</typeDef>
+											</property>
+										</typeDef>
+									</property>
+									<property xmlns:d10p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="EXPIRE_DATE" type="d10p1:DateType" lowerBound="0"/>
+									<property xmlns:d10p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="NOM_TYP" type="d10p1:IntegerType" lowerBound="0"/>
+									<property xmlns:d10p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="SUB_NOM_TYP" type="d10p1:IntegerType" lowerBound="0"/>
+									<property xmlns:d10p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="PRICE" type="d10p1:NumericType" lowerBound="0"/>
+									<property name="EXT_PARAMS" lowerBound="0">
+										<typeDef xsi:type="ObjectType">
+											<property xmlns:d12p1="cwms3000.ru/in" name="PARAM" type="d12p1:ParamType" upperBound="-1"/>
+										</typeDef>
+									</property>
+								</typeDef>
+							</property>
+						</typeDef>
+					</property>
+					<property name="EXT_PARAMS" lowerBound="0">
+						<typeDef xsi:type="ObjectType">
+							<property xmlns:d8p1="cwms3000.ru/in" name="PARAM" type="d8p1:ParamType" upperBound="-1"/>
+						</typeDef>
+					</property>
+				</typeDef>
+			</property>
+		</typeDef>
+	</property>
+	<objectType name="ParamType">
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="PARAM_NAME" type="d3p1:Text50Type"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="PARAM_VALUE" type="d3p1:Text255Type"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="PARAM_CAPTION" type="d3p1:Text255Type" lowerBound="0"/>
+	</objectType>
+</package>

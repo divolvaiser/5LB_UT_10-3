@@ -1,0 +1,19 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://www.external_reception_information.out.org">
+	<valueType name="DateParametr" variety="Union" memberTypes="{http://www.w3.org/2001/XMLSchema}date {http://www.w3.org/2001/XMLSchema}string"/>
+	<objectType name="array_of_residues" open="false">
+		<property name="product_name" type="xs:string" form="Element"/>
+		<property name="product_code" type="xs:string"/>
+		<property name="product_guid" type="xs:string"/>
+		<property name="OKEI_code" type="xs:string" lowerBound="1" upperBound="1"/>
+		<property name="produсt_barcode" type="xs:string"/>
+		<property name="price" type="xs:float"/>
+		<property name="quantity" type="xs:float"/>
+		<property name="weight" type="xs:float"/>
+		<property name="width" type="xs:float"/>
+		<property name="height" type="xs:float"/>
+		<property name="depth" type="xs:float"/>
+	</objectType>
+	<objectType name="element_array" open="true">
+		<property xmlns:d3p1="http://www.external_reception_information.out.org" name="element" type="d3p1:array_of_residues" upperBound="-1"/>
+	</objectType>
+</package>

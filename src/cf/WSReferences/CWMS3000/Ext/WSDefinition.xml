@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/"
+		xmlns:soap12bind="http://schemas.xmlsoap.org/wsdl/soap12/"
+		xmlns:soapbind="http://schemas.xmlsoap.org/wsdl/soap/"
+		xmlns:tns="http://cwms3000.ru/soap"
+		xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy"
+		xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		xmlns:xsd1="urn:expTypes"
+		name="IICwmsLoadDocservice"
+		targetNamespace="http://cwms3000.ru/soap">
+	<types>
+		<xs:schema xmlns="urn:expTypes"
+				xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/"
+				xmlns:ns1="urn:expTypes"
+				xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+				xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/"
+				xmlns:tns="urn:expTypes"
+				xmlns:xs="http://www.w3.org/2001/XMLSchema"
+				targetNamespace="urn:expTypes">
+			<xs:complexType name="TCallResult">
+				<xs:sequence>
+					<xs:element name="ResultCode"
+							type="xs:int"/>
+					<xs:element name="ResultMsg"
+							type="xs:string"/>
+				</xs:sequence>
+			</xs:complexType>
+		</xs:schema>
+	</types>
+	<message name="LoadDoc0Request">
+		<part name="login"
+				type="xsd:string"/>
+		<part name="password"
+				type="xsd:string"/>
+		<part name="taskId"
+				type="xsd:string"/>
+		<part name="document"
+				type="xsd:base64Binary"/>
+	</message>
+	<message name="LoadDoc0Response">
+		<part name="return"
+				type="xsd1:TCallResult"/>
+	</message>
+	<message name="LoadDoc21Request">
+		<part name="login"
+				type="xsd:string"/>
+		<part name="password"
+				type="xsd:string"/>
+		<part name="taskId"
+				type="xsd:string"/>
+		<part name="document"
+				type="xsd:base64Binary"/>
+	</message>
+	<message name="LoadDoc21Response">
+		<part name="return"
+				type="xsd1:TCallResult"/>
+	</message>
+	<message name="LoadDoc32Request">
+		<part name="login"
+				type="xsd:string"/>
+		<part name="password"
+				type="xsd:string"/>
+		<part name="taskId"
+				type="xsd:string"/>
+		<part name="document"
+				type="xsd:base64Binary"/>
+	</message>
+	<message name="LoadDoc32Response">
+		<part name="return"
+				type="xsd:string"/>
+	</message>
+	<portType name="IICwmsLoadDoc">
+		<operation name="LoadDoc">
+			<input name="LoadDocRequest"
+					message="tns:LoadDoc0Request"/>
+			<output name="LoadDocResponse"
+					message="tns:LoadDoc0Response"/>
+		</operation>
+		<operation name="LoadDoc2">
+			<input name="LoadDoc2Request"
+					message="tns:LoadDoc21Request"/>
+			<output name="LoadDoc2Response"
+					message="tns:LoadDoc21Response"/>
+		</operation>
+		<operation name="LoadDoc3">
+			<input name="LoadDoc3Request"
+					message="tns:LoadDoc32Request"/>
+			<output name="LoadDoc3Response"
+					message="tns:LoadDoc32Response"/>
+		</operation>
+	</portType>
+	<binding name="IICwmsLoadDocbinding"
+			type="tns:IICwmsLoadDoc">
+		<soapbind:binding style="rpc"
+				transport="http://schemas.xmlsoap.org/soap/http"/>
+		<operation name="LoadDoc">
+			<soapbind:operation style="rpc"
+					soapAction="urn:ICwmsLoadDocIntf-IICwmsLoadDoc#LoadDoc"/>
+			<input/>
+			<output>
+				<soapbind:body use="encoded"
+						encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+						namespace="urn:ICwmsLoadDocIntf-IICwmsLoadDoc"/>
+			</output>
+		</operation>
+		<operation name="LoadDoc2">
+			<soapbind:operation style="rpc"
+					soapAction="urn:ICwmsLoadDocIntf-IICwmsLoadDoc#LoadDoc2"/>
+			<input>
+				<soapbind:body use="encoded"
+						encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+						namespace="urn:ICwmsLoadDocIntf-IICwmsLoadDoc"/>
+			</input>
+			<output>
+				<soapbind:body use="encoded"
+						encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+						namespace="urn:ICwmsLoadDocIntf-IICwmsLoadDoc"/>
+			</output>
+		</operation>
+		<operation name="LoadDoc3">
+			<soapbind:operation style="rpc"
+					soapAction="urn:ICwmsLoadDocIntf-IICwmsLoadDoc#LoadDoc3"/>
+			<input>
+				<soapbind:body use="encoded"
+						encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+						namespace="urn:ICwmsLoadDocIntf-IICwmsLoadDoc"/>
+			</input>
+			<output>
+				<soapbind:body use="encoded"
+						encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+						namespace="urn:ICwmsLoadDocIntf-IICwmsLoadDoc"/>
+			</output>
+		</operation>
+	</binding>
+	<service name="IICwmsLoadDocservice">
+		<port name="IICwmsLoadDocPort"
+				binding="tns:IICwmsLoadDocbinding">
+			<soapbind:address location="http://192.168.11.112/cgi-bin/loadxmlsoap.exe/soap/IICwmsLoadDoc"/>
+		</port>
+	</service>
+</definitions>

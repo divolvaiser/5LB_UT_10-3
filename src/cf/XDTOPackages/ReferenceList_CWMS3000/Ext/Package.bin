@@ -1,0 +1,43 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="cwms3000.ru/ref">
+	<import namespace="urn:cwms3000.ru:BaseTypes:1.0.0"/>
+	<property name="REFERENCES_LIST">
+		<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+			<property xmlns:d4p1="cwms3000.ru/ref" name="CLIENT_LIST" type="d4p1:OrgListType" lowerBound="0" upperBound="-1"/>
+			<property xmlns:d4p1="cwms3000.ru/ref" name="SUPPLIER_LIST" type="d4p1:OrgListType" lowerBound="0" upperBound="-1"/>
+			<property xmlns:d4p1="cwms3000.ru/ref" name="IMPORTER_LIST" type="d4p1:OrgListType" lowerBound="0" upperBound="-1"/>
+			<property xmlns:d4p1="cwms3000.ru/ref" name="PRODUCER_LIST" type="d4p1:OrgListType" lowerBound="0" upperBound="-1"/>
+		</typeDef>
+	</property>
+	<objectType name="OrgListType">
+		<property xmlns:d3p1="cwms3000.ru/ref" name="ORGANIZATION" type="d3p1:OrgType" upperBound="-1"/>
+	</objectType>
+	<objectType name="OrgType">
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="ORG_ID" type="d3p1:Text100Type"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="ORG_NAME" type="d3p1:Text255Type"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="ADDR_JUR" type="d3p1:Text255Type"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="ADDR_FACT" type="d3p1:Text255Type"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="PHONE" type="d3p1:Text100Type" lowerBound="0"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="EMAIL" type="d3p1:Text100Type" lowerBound="0"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="ORG_ACCOUNT" type="d3p1:Text100Type" lowerBound="0"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="BANK_ACCOUNT" type="d3p1:Text100Type" lowerBound="0"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="INN" type="d3p1:Text100Type" lowerBound="0"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="KPP" type="d3p1:Text100Type" lowerBound="0"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="BANK_NAME" type="d3p1:Text100Type" lowerBound="0"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="BIK" type="d3p1:Text100Type" lowerBound="0"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="OKPO" type="d3p1:Text100Type" lowerBound="0"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="OKONH" type="d3p1:Text100Type" lowerBound="0"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="OKVED" type="d3p1:Text100Type" lowerBound="0"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="RESIDENT" type="d3p1:Int01Type" lowerBound="0"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="ORG_GROUP" type="d3p1:Text100Type" lowerBound="0"/>
+		<property name="EXT_PARAMS" lowerBound="0">
+			<typeDef xsi:type="ObjectType">
+				<property xmlns:d5p1="cwms3000.ru/ref" name="PARAM" type="d5p1:ParamType" lowerBound="0" upperBound="-1"/>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="ParamType">
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="PARAM_NAME" type="d3p1:Text50Type"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="PARAM_VALUE" type="d3p1:Text255Type"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="PARAM_CAPTION" type="d3p1:Text255Type" lowerBound="0"/>
+	</objectType>
+</package>

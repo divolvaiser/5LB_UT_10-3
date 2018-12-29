@@ -1,0 +1,1049 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>Основной</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Период</dataPath>
+			<field>Период</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Склад</dataPath>
+			<field>Склад</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Склад</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+			<valueType>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.Склады</v8:Type>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаДокумента</dataPath>
+			<field>СуммаДокумента</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма документов 1С</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерСмены</dataPath>
+			<field>НомерСмены</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаЧека</dataPath>
+			<field>СуммаЧека</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма чеков ККМ</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерЧека</dataPath>
+			<field>НомерЧека</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Пользователь</dataPath>
+			<field>Пользователь</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Нал_БезНал</dataPath>
+			<field>Нал_БезНал</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид оплаты</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Продажа_Возврат</dataPath>
+			<field>Продажа_Возврат</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Продажа/Возврат</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаZОтчетаОРП</dataPath>
+			<field>СуммаZОтчетаОРП</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма z отчета ОРП</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОРП</dataPath>
+			<field>ОРП</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ОРП</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаДокументаОРП</dataPath>
+			<field>СуммаДокументаОРП</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма документа ОРП</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Документ</dataPath>
+			<field>Документ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документ</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаОРП</dataPath>
+			<field>СуммаОРП</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма по видам оплаты (ОРП)</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	ОтчетОРозничныхПродажах.Склад,
+	ОтчетОРозничныхПродажах.Ссылка КАК ОРП,
+	НАЧАЛОПЕРИОДА(ОтчетОРозничныхПродажах.Дата, ДЕНЬ) КАК Период,
+	ОтчетОРозничныхПродажах.ZОтчетНомер КАК НомерСмены,
+	ОтчетОРозничныхПродажах.ZСуммаКон - ОтчетОРозничныхПродажах.ZСуммаНач КАК СуммаZОтчетаОРП,
+	ОтчетОРозничныхПродажах.СуммаДокумента КАК СуммаДокументаОРП
+ПОМЕСТИТЬ ВР_ОРП_БезРазделенияПоВидамОплаты
+ИЗ
+	Документ.ОтчетОРозничныхПродажах КАК ОтчетОРозничныхПродажах
+ГДЕ
+	ОтчетОРозничныхПродажах.Дата МЕЖДУ &amp;ДатаНачала И &amp;ДатаОкончания
+	И НЕ ОтчетОРозничныхПродажах.ПометкаУдаления
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ОтчетОРозничныхПродажахОплатаПлатежнымиКартами.Ссылка,
+	ОтчетОРозничныхПродажахОплатаПлатежнымиКартами.ВидОплаты,
+	СУММА(ОтчетОРозничныхПродажахОплатаПлатежнымиКартами.Сумма) КАК Сумма
+ПОМЕСТИТЬ ВР_ОРП_ОплатаКартами
+ИЗ
+	Документ.ОтчетОРозничныхПродажах.ОплатаПлатежнымиКартами КАК ОтчетОРозничныхПродажахОплатаПлатежнымиКартами
+ГДЕ
+	ОтчетОРозничныхПродажахОплатаПлатежнымиКартами.Ссылка В
+			(ВЫБРАТЬ
+				ВР_ОРП_БезРазделенияПоВидамОплаты.ОРП
+			ИЗ
+				ВР_ОРП_БезРазделенияПоВидамОплаты КАК ВР_ОРП_БезРазделенияПоВидамОплаты)
+
+СГРУППИРОВАТЬ ПО
+	ОтчетОРозничныхПродажахОплатаПлатежнымиКартами.Ссылка,
+	ОтчетОРозничныхПродажахОплатаПлатежнымиКартами.ВидОплаты
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ДляГруппировкиНаличногоВидаОплаты.Ссылка,
+	ДляГруппировкиНаличногоВидаОплаты.ВидОплаты,
+	СУММА(ДляГруппировкиНаличногоВидаОплаты.Сумма)
+ИЗ
+	(ВЫБРАТЬ
+		ОтчетОРозничныхПродажахОплатаПлатежнымиКартами.Ссылка КАК Ссылка,
+		ЗНАЧЕНИЕ(Справочник.ВидыОплатЧекаККМ.Наличные) КАК ВидОплаты,
+		ОтчетОРозничныхПродажахОплатаПлатежнымиКартами.Сумма КАК Сумма
+	ИЗ
+		Документ.ОтчетОРозничныхПродажах.ОплатаПлатежнымиКартами КАК ОтчетОРозничныхПродажахОплатаПлатежнымиКартами
+	ГДЕ
+		ОтчетОРозничныхПродажахОплатаПлатежнымиКартами.Ссылка В
+				(ВЫБРАТЬ
+					ВР_ОРП_БезРазделенияПоВидамОплаты.ОРП
+				ИЗ
+					ВР_ОРП_БезРазделенияПоВидамОплаты КАК ВР_ОРП_БезРазделенияПоВидамОплаты)) КАК ДляГруппировкиНаличногоВидаОплаты
+
+СГРУППИРОВАТЬ ПО
+	ДляГруппировкиНаличногоВидаОплаты.Ссылка,
+	ДляГруппировкиНаличногоВидаОплаты.ВидОплаты
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВР_ОРП_БезРазделенияПоВидамОплаты.Склад,
+	ВР_ОРП_БезРазделенияПоВидамОплаты.ОРП,
+	ВР_ОРП_БезРазделенияПоВидамОплаты.Период,
+	ВР_ОРП_БезРазделенияПоВидамОплаты.НомерСмены,
+	ВР_ОРП_БезРазделенияПоВидамОплаты.СуммаZОтчетаОРП,
+	ВР_ОРП_БезРазделенияПоВидамОплаты.СуммаДокументаОРП,
+	ЕСТЬNULL(ВР_ОРП_ОплатаКартами.ВидОплаты, ЗНАЧЕНИЕ(Справочник.ВидыОплатЧекаККМ.Наличные)) КАК ВидОплаты,
+	ВЫБОР
+		КОГДА ВР_ОРП_ОплатаКартами.ВидОплаты = &amp;Наличные ИЛИ ВР_ОРП_ОплатаКартами.ВидОплаты Есть NULL
+			ТОГДА ВР_ОРП_БезРазделенияПоВидамОплаты.СуммаДокументаОРП - ЕСТЬNULL(ВР_ОРП_ОплатаКартами.Сумма, 0)
+		ИНАЧЕ ВР_ОРП_ОплатаКартами.Сумма
+	КОНЕЦ КАК СуммаОРП
+ПОМЕСТИТЬ ВР_ОРП
+ИЗ
+	ВР_ОРП_БезРазделенияПоВидамОплаты КАК ВР_ОРП_БезРазделенияПоВидамОплаты
+		ЛЕВОЕ СОЕДИНЕНИЕ ВР_ОРП_ОплатаКартами КАК ВР_ОРП_ОплатаКартами
+		ПО ВР_ОРП_БезРазделенияПоВидамОплаты.ОРП = ВР_ОРП_ОплатаКартами.Ссылка
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ЧекиККМ.Документ,
+	НАЧАЛОПЕРИОДА(ЧекиККМ.Период, ДЕНЬ) КАК Период,
+	ЧекиККМ.ВидОплатыЧекаККМ,
+	ЧекиККМ.Склад,
+	ЧекиККМ.ВидыОперацийЧекККМ,
+	ЧекиККМ.Пользователь,
+	ЧекиККМ.НомерЧека,
+	СУММА(ВЫБОР
+			КОГДА ЧекиККМ.ВидыОперацийЧекККМ = &amp;Продажа
+				ТОГДА ЧекиККМ.Сумма
+			ИНАЧЕ -1 * ЧекиККМ.Сумма
+		КОНЕЦ) КАК СуммаЧека,
+	ЧекиККМ.НомерСмены
+ПОМЕСТИТЬ Чеки
+ИЗ
+	РегистрСведений.ЧекиККМ КАК ЧекиККМ
+ГДЕ
+	ЧекиККМ.Период МЕЖДУ &amp;ДатаНачала И &amp;ДатаОкончания
+
+СГРУППИРОВАТЬ ПО
+	ЧекиККМ.ВидОплатыЧекаККМ,
+	НАЧАЛОПЕРИОДА(ЧекиККМ.Период, ДЕНЬ),
+	ЧекиККМ.Документ,
+	ЧекиККМ.Пользователь,
+	ЧекиККМ.Склад,
+	ЧекиККМ.ВидыОперацийЧекККМ,
+	ЧекиККМ.НомерЧека,
+	ЧекиККМ.НомерСмены
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	НАЧАЛОПЕРИОДА(РеализацияТоваровУслуг.Дата, ДЕНЬ) КАК Период,
+	РеализацияТоваровУслуг.Ссылка КАК Документ,
+	РеализацияТоваровУслуг.Склад,
+	РеализацияТоваровУслуг.ВидОплаты,
+	СУММА(РеализацияТоваровУслуг.СуммаДокумента) КАК СуммаДокумента
+ПОМЕСТИТЬ Документы1С
+ИЗ
+	Документ.РеализацияТоваровУслуг КАК РеализацияТоваровУслуг
+ГДЕ
+	РеализацияТоваровУслуг.Дата МЕЖДУ &amp;ДатаНачала И &amp;ДатаОкончания
+	И НЕ РеализацияТоваровУслуг.ПометкаУдаления
+
+СГРУППИРОВАТЬ ПО
+	НАЧАЛОПЕРИОДА(РеализацияТоваровУслуг.Дата, ДЕНЬ),
+	РеализацияТоваровУслуг.ВидОплаты,
+	РеализацияТоваровУслуг.Ссылка,
+	РеализацияТоваровУслуг.Склад
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	НАЧАЛОПЕРИОДА(ВозвратТоваровОтПокупателя.Сделка.Дата, ДЕНЬ),
+	ВозвратТоваровОтПокупателя.Ссылка,
+	ВозвратТоваровОтПокупателя.СкладОрдер,
+	ВозвратТоваровОтПокупателя.Сделка.ВидОплаты,
+	СУММА(-1 * ВозвратТоваровОтПокупателя.СуммаДокумента)
+ИЗ
+	Документ.ВозвратТоваровОтПокупателя КАК ВозвратТоваровОтПокупателя
+ГДЕ
+	ВозвратТоваровОтПокупателя.Сделка.Дата МЕЖДУ &amp;ДатаНачала И &amp;ДатаОкончания
+	И ВозвратТоваровОтПокупателя.Сделка ССЫЛКА Документ.РеализацияТоваровУслуг
+	И ВозвратТоваровОтПокупателя.Сделка &lt;&gt; ЗНАЧЕНИЕ(Документ.РеализацияТоваровУслуг.ПустаяСсылка)
+	И НЕ ВозвратТоваровОтПокупателя.ПометкаУдаления
+
+СГРУППИРОВАТЬ ПО
+	ВозвратТоваровОтПокупателя.Ссылка,
+	НАЧАЛОПЕРИОДА(ВозвратТоваровОтПокупателя.Сделка.Дата, ДЕНЬ),
+	ВозвратТоваровОтПокупателя.СкладОрдер,
+	ВозвратТоваровОтПокупателя.Сделка.ВидОплаты
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ЕСТЬNULL(Чеки.Документ, Документы1С.Документ) КАК Документ,
+	ЕСТЬNULL(Чеки.Период, Документы1С.Период) КАК Период,
+	ЕСТЬNULL(Чеки.ВидОплатыЧекаККМ, Документы1С.ВидОплаты) КАК Нал_БезНал,
+	ЕСТЬNULL(Чеки.Склад, Документы1С.Склад) КАК Склад,
+	Чеки.ВидыОперацийЧекККМ КАК Продажа_Возврат,
+	Чеки.Пользователь,
+	Чеки.НомерЧека,
+	СУММА(Чеки.СуммаЧека) КАК СуммаЧека,
+	Чеки.НомерСмены,
+	СУММА(Документы1С.СуммаДокумента) КАК СуммаДокумента
+ПОМЕСТИТЬ ВР_Чеки
+ИЗ
+	Документы1С КАК Документы1С
+		ПОЛНОЕ СОЕДИНЕНИЕ Чеки КАК Чеки
+		ПО Документы1С.Документ = Чеки.Документ
+			И Документы1С.Период = Чеки.Период
+			И Документы1С.ВидОплаты = Чеки.ВидОплатыЧекаККМ
+			И Документы1С.Склад = Чеки.Склад
+
+СГРУППИРОВАТЬ ПО
+	Чеки.ВидыОперацийЧекККМ,
+	Чеки.Пользователь,
+	ЕСТЬNULL(Чеки.Период, Документы1С.Период),
+	ЕСТЬNULL(Чеки.Документ, Документы1С.Документ),
+	ЕСТЬNULL(Чеки.Склад, Документы1С.Склад),
+	ЕСТЬNULL(Чеки.ВидОплатыЧекаККМ, Документы1С.ВидОплаты),
+	Чеки.НомерЧека,
+	Чеки.НомерСмены
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ЕСТЬNULL(ВР_ОРП.Склад, ВР_Чеки.Склад) КАК Склад,
+	ЕСТЬNULL(ВР_ОРП.Период, ВР_Чеки.Период) КАК Период,
+	ЕСТЬNULL(ВР_ОРП.НомерСмены, ВР_Чеки.НомерСмены) КАК НомерСмены,
+	ВР_ОРП.ОРП,
+	СУММА(ЕСТЬNULL(ВР_ОРП.СуммаZОтчетаОРП, 0)) КАК СуммаZОтчетаОРП,
+	СУММА(ЕСТЬNULL(ВР_ОРП.СуммаДокументаОРП, 0)) КАК СуммаДокументаОРП,
+	ЕСТЬNULL(ВР_Чеки.Нал_БезНал, ВР_ОРП.ВидОплаты) КАК Нал_БезНал,
+	ВР_Чеки.Продажа_Возврат,
+	ВР_Чеки.Пользователь,
+	ВР_Чеки.НомерЧека,
+	СУММА(ЕСТЬNULL(ВР_Чеки.СуммаЧека, 0)) КАК СуммаЧека,
+	СУММА(ЕСТЬNULL(ВР_Чеки.СуммаДокумента, 0)) КАК СуммаДокумента,
+	ВР_Чеки.Документ,
+	СУММА(ЕСТЬNULL(ВР_ОРП.СуммаОРП, 0)) КАК СуммаОРП
+ИЗ
+	ВР_ОРП КАК ВР_ОРП
+		ПОЛНОЕ СОЕДИНЕНИЕ ВР_Чеки КАК ВР_Чеки
+		ПО ВР_ОРП.Склад = ВР_Чеки.Склад
+			И ВР_ОРП.Период = ВР_Чеки.Период
+			И ВР_ОРП.НомерСмены = ВР_Чеки.НомерСмены
+			И ВР_ОРП.ВидОплаты = ВР_Чеки.Нал_БезНал
+
+СГРУППИРОВАТЬ ПО
+	ЕСТЬNULL(ВР_ОРП.Склад, ВР_Чеки.Склад),
+	ЕСТЬNULL(ВР_ОРП.Период, ВР_Чеки.Период),
+	ЕСТЬNULL(ВР_ОРП.НомерСмены, ВР_Чеки.НомерСмены),
+	ЕСТЬNULL(ВР_Чеки.Нал_БезНал, ВР_ОРП.ВидОплаты),
+	ВР_ОРП.ОРП,
+	ВР_Чеки.Продажа_Возврат,
+	ВР_Чеки.НомерЧека,
+	ВР_Чеки.Пользователь,
+	ВР_Чеки.Документ</query>
+	</dataSet>
+	<totalField>
+		<dataPath>СуммаДокумента</dataPath>
+		<expression>Сумма(ВычислитьВыражениеСГруппировкойМассив("Максимум(СуммаДокумента)","Документ"))</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаЧека</dataPath>
+		<expression>Сумма(ВычислитьВыражениеСГруппировкойМассив("Максимум(СуммаЧека)","Документ"))</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаZОтчетаОРП</dataPath>
+		<expression>Сумма(ВычислитьВыражениеСГруппировкойМассив("Максимум(СуммаZОтчетаОРП)","ОРП"))</expression>
+		<group>Нал_БезНал</group>
+		<group>Нал_БезНал Иерархия</group>
+		<group>НомерСмены</group>
+		<group>ОРП</group>
+		<group>Период</group>
+		<group>Склад</group>
+		<group>Склад Иерархия</group>
+		<group>ОбщийИтог</group>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаДокументаОРП</dataPath>
+		<expression>Сумма(ВычислитьВыражениеСГруппировкойМассив("Максимум(СуммаДокументаОРП)","ОРП"))</expression>
+		<group>Нал_БезНал</group>
+		<group>Нал_БезНал Иерархия</group>
+		<group>НомерСмены</group>
+		<group>ОРП</group>
+		<group>Период</group>
+		<group>Склад</group>
+		<group>Склад Иерархия</group>
+		<group>ОбщийИтог</group>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаОРП</dataPath>
+		<expression>Сумма(ВычислитьВыражениеСГруппировкойМассив("Максимум(СуммаОРП)","ОРП"))</expression>
+		<group>Нал_БезНал</group>
+		<group>Нал_БезНал Иерархия</group>
+		<group>НомерСмены</group>
+		<group>ОРП</group>
+		<group>Период</group>
+		<group>Склад</group>
+		<group>Склад Иерархия</group>
+		<group>ОбщийИтог</group>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаZОтчетаОРП</dataPath>
+		<expression>Сумма(0)</expression>
+		<group>Документ</group>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаДокументаОРП</dataPath>
+		<expression>Сумма(0)</expression>
+		<group>Документ</group>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаОРП</dataPath>
+		<expression>Сумма(0)</expression>
+		<group>Документ</group>
+	</totalField>
+	<parameter>
+		<name>ДатаНачала</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата начала</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ДатаОкончания</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата окончания</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>Продажа</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Продажа</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:EnumRef.ВидыОперацийЧекККМ</v8:Type>
+		</valueType>
+		<value xsi:type="dcscor:DesignTimeValue">Перечисление.ВидыОперацийЧекККМ.Продажа</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>Наличные</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Наличные</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.ВидыОплатЧекаККМ</v8:Type>
+		</valueType>
+		<value xsi:type="dcscor:DesignTimeValue">Справочник.ВидыОплатЧекаККМ.Наличные</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НомерЧека</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОРП</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НомерСмены</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Период</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Пользователь</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СуммаДокумента</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СуммаЧека</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СуммаОРП</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СуммаДокументаОРП</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СуммаZОтчетаОРП</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Склад</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Нал_БезНал</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Продажа_Возврат</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Документ</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Документ.Posted</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Склад</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ДатаНачала</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardBeginningDate">
+						<v8:variant xsi:type="v8:StandardBeginningDateVariant">Custom</v8:variant>
+						<v8:date>2016-07-12T00:00:00</v8:date>
+					</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ДатаОкончания</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardBeginningDate">
+						<v8:variant xsi:type="v8:StandardBeginningDateVariant">Custom</v8:variant>
+						<v8:date>2016-07-12T23:59:59</v8:date>
+					</dcscor:value>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:conditionalAppearance>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>СуммаZОтчетаОРП</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>СуммаДокумента</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>СуммаДокументаОРП</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>СуммаЧека</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter/>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>MarkNegatives</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>Документ</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Документ.Posted</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:use>false</dcscor:use>
+							<dcscor:parameter>BackColor</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">style:FormBackColor</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>TextColor</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">web:MediumGray</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Font</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="false" italic="true" underline="false" strikeout="false" kind="WindowsFont"/>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+			</dcsset:conditionalAppearance>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>AppearanceTemplate</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">Зеленый</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemTable">
+				<dcsset:column>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Нал_БезНал</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto">
+							<dcsset:use>false</dcsset:use>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Нал_БезНал</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>СуммаДокумента</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>СуммаЧека</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>СуммаОРП</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:outputParameters>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>OverallsPlacement</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+						</dcscor:item>
+					</dcsset:outputParameters>
+				</dcsset:column>
+				<dcsset:column>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto">
+							<dcsset:use>false</dcsset:use>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>СуммаДокумента</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>СуммаЧека</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>СуммаДокументаОРП</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>СуммаZОтчетаОРП</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:outputParameters>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>AppearanceTemplate</dcscor:parameter>
+							<dcscor:value xsi:type="xs:string">Яркий</dcscor:value>
+						</dcscor:item>
+					</dcsset:outputParameters>
+				</dcsset:column>
+				<dcsset:row>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Склад</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:item>
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Период</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>Day</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="dcscor:Field">DataParameters.ДатаНачала</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="dcscor:Field">DataParameters.ДатаОкончания</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+						<dcsset:conditionalAppearance>
+							<dcsset:item>
+								<dcsset:selection>
+									<dcsset:item>
+										<dcsset:field>Период</dcsset:field>
+									</dcsset:item>
+									<dcsset:item>
+										<dcsset:field>СуммаZОтчетаОРП</dcsset:field>
+									</dcsset:item>
+									<dcsset:item>
+										<dcsset:field>СуммаДокументаОРП</dcsset:field>
+									</dcsset:item>
+								</dcsset:selection>
+								<dcsset:filter>
+									<dcsset:item xsi:type="dcsset:FilterItemComparison">
+										<dcsset:left xsi:type="dcscor:Field">СуммаZОтчетаОРП</dcsset:left>
+										<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+										<dcsset:right xsi:type="dcscor:Field">СуммаДокументаОРП</dcsset:right>
+									</dcsset:item>
+								</dcsset:filter>
+								<dcsset:appearance>
+									<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+										<dcscor:use>false</dcscor:use>
+										<dcscor:parameter>BackColor</dcscor:parameter>
+										<dcscor:value xsi:type="v8ui:Color">#FF99CC</dcscor:value>
+									</dcscor:item>
+									<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+										<dcscor:parameter>TextColor</dcscor:parameter>
+										<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
+									</dcscor:item>
+									<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+										<dcscor:parameter>Font</dcscor:parameter>
+										<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									</dcscor:item>
+								</dcsset:appearance>
+							</dcsset:item>
+							<dcsset:item>
+								<dcsset:selection>
+									<dcsset:item>
+										<dcsset:field>Период</dcsset:field>
+									</dcsset:item>
+									<dcsset:item>
+										<dcsset:field>СуммаZОтчетаОРП</dcsset:field>
+									</dcsset:item>
+									<dcsset:item>
+										<dcsset:field>СуммаДокумента</dcsset:field>
+									</dcsset:item>
+								</dcsset:selection>
+								<dcsset:filter>
+									<dcsset:item xsi:type="dcsset:FilterItemComparison">
+										<dcsset:left xsi:type="dcscor:Field">СуммаZОтчетаОРП</dcsset:left>
+										<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+										<dcsset:right xsi:type="dcscor:Field">СуммаДокумента</dcsset:right>
+									</dcsset:item>
+								</dcsset:filter>
+								<dcsset:appearance>
+									<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+										<dcscor:use>false</dcscor:use>
+										<dcscor:parameter>BackColor</dcscor:parameter>
+										<dcscor:value xsi:type="v8ui:Color">#FF99CC</dcscor:value>
+									</dcscor:item>
+									<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+										<dcscor:parameter>TextColor</dcscor:parameter>
+										<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
+									</dcscor:item>
+									<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+										<dcscor:parameter>Font</dcscor:parameter>
+										<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									</dcscor:item>
+								</dcsset:appearance>
+							</dcsset:item>
+							<dcsset:item>
+								<dcsset:selection>
+									<dcsset:item>
+										<dcsset:field>Период</dcsset:field>
+									</dcsset:item>
+									<dcsset:item>
+										<dcsset:field>СуммаZОтчетаОРП</dcsset:field>
+									</dcsset:item>
+									<dcsset:item>
+										<dcsset:field>СуммаЧека</dcsset:field>
+									</dcsset:item>
+								</dcsset:selection>
+								<dcsset:filter>
+									<dcsset:item xsi:type="dcsset:FilterItemComparison">
+										<dcsset:left xsi:type="dcscor:Field">СуммаZОтчетаОРП</dcsset:left>
+										<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+										<dcsset:right xsi:type="dcscor:Field">СуммаЧека</dcsset:right>
+									</dcsset:item>
+								</dcsset:filter>
+								<dcsset:appearance>
+									<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+										<dcscor:use>false</dcscor:use>
+										<dcscor:parameter>BackColor</dcscor:parameter>
+										<dcscor:value xsi:type="v8ui:Color">#FF99CC</dcscor:value>
+									</dcscor:item>
+									<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+										<dcscor:parameter>TextColor</dcscor:parameter>
+										<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
+									</dcscor:item>
+									<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+										<dcscor:parameter>Font</dcscor:parameter>
+										<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									</dcscor:item>
+								</dcsset:appearance>
+							</dcsset:item>
+							<dcsset:item>
+								<dcsset:selection>
+									<dcsset:item>
+										<dcsset:field>Период</dcsset:field>
+									</dcsset:item>
+									<dcsset:item>
+										<dcsset:field>СуммаДокумента</dcsset:field>
+									</dcsset:item>
+									<dcsset:item>
+										<dcsset:field>СуммаДокументаОРП</dcsset:field>
+									</dcsset:item>
+								</dcsset:selection>
+								<dcsset:filter>
+									<dcsset:item xsi:type="dcsset:FilterItemComparison">
+										<dcsset:left xsi:type="dcscor:Field">СуммаДокумента</dcsset:left>
+										<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+										<dcsset:right xsi:type="dcscor:Field">СуммаДокументаОРП</dcsset:right>
+									</dcsset:item>
+								</dcsset:filter>
+								<dcsset:appearance>
+									<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+										<dcscor:use>false</dcscor:use>
+										<dcscor:parameter>BackColor</dcscor:parameter>
+										<dcscor:value xsi:type="v8ui:Color">#FF99CC</dcscor:value>
+									</dcscor:item>
+									<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+										<dcscor:parameter>TextColor</dcscor:parameter>
+										<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
+									</dcscor:item>
+									<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+										<dcscor:parameter>Font</dcscor:parameter>
+										<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									</dcscor:item>
+								</dcsset:appearance>
+							</dcsset:item>
+							<dcsset:item>
+								<dcsset:selection>
+									<dcsset:item>
+										<dcsset:field>Период</dcsset:field>
+									</dcsset:item>
+									<dcsset:item>
+										<dcsset:field>СуммаДокумента</dcsset:field>
+									</dcsset:item>
+									<dcsset:item>
+										<dcsset:field>СуммаЧека</dcsset:field>
+									</dcsset:item>
+								</dcsset:selection>
+								<dcsset:filter>
+									<dcsset:item xsi:type="dcsset:FilterItemComparison">
+										<dcsset:left xsi:type="dcscor:Field">СуммаДокумента</dcsset:left>
+										<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+										<dcsset:right xsi:type="dcscor:Field">СуммаЧека</dcsset:right>
+									</dcsset:item>
+								</dcsset:filter>
+								<dcsset:appearance>
+									<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+										<dcscor:use>false</dcscor:use>
+										<dcscor:parameter>BackColor</dcscor:parameter>
+										<dcscor:value xsi:type="v8ui:Color">#FF99CC</dcscor:value>
+									</dcscor:item>
+									<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+										<dcscor:parameter>TextColor</dcscor:parameter>
+										<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
+									</dcscor:item>
+									<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+										<dcscor:parameter>Font</dcscor:parameter>
+										<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									</dcscor:item>
+								</dcsset:appearance>
+							</dcsset:item>
+							<dcsset:item>
+								<dcsset:selection>
+									<dcsset:item>
+										<dcsset:field>Период</dcsset:field>
+									</dcsset:item>
+									<dcsset:item>
+										<dcsset:field>СуммаДокументаОРП</dcsset:field>
+									</dcsset:item>
+									<dcsset:item>
+										<dcsset:field>СуммаЧека</dcsset:field>
+									</dcsset:item>
+								</dcsset:selection>
+								<dcsset:filter>
+									<dcsset:item xsi:type="dcsset:FilterItemComparison">
+										<dcsset:left xsi:type="dcscor:Field">СуммаДокументаОРП</dcsset:left>
+										<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+										<dcsset:right xsi:type="dcscor:Field">СуммаЧека</dcsset:right>
+									</dcsset:item>
+								</dcsset:filter>
+								<dcsset:appearance>
+									<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+										<dcscor:use>false</dcscor:use>
+										<dcscor:parameter>BackColor</dcscor:parameter>
+										<dcscor:value xsi:type="v8ui:Color">#FF99CC</dcscor:value>
+									</dcscor:item>
+									<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+										<dcscor:parameter>TextColor</dcscor:parameter>
+										<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
+									</dcscor:item>
+									<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+										<dcscor:parameter>Font</dcscor:parameter>
+										<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									</dcscor:item>
+								</dcsset:appearance>
+							</dcsset:item>
+						</dcsset:conditionalAppearance>
+						<dcsset:item>
+							<dcsset:groupItems>
+								<dcsset:item xsi:type="dcsset:GroupItemField">
+									<dcsset:field>ОРП</dcsset:field>
+									<dcsset:groupType>Items</dcsset:groupType>
+									<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+									<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+									<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:GroupItemField">
+									<dcsset:field>НомерСмены</dcsset:field>
+									<dcsset:groupType>Items</dcsset:groupType>
+									<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+									<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+									<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+								</dcsset:item>
+							</dcsset:groupItems>
+							<dcsset:order>
+								<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+							</dcsset:order>
+							<dcsset:selection>
+								<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+							</dcsset:selection>
+							<dcsset:item>
+								<dcsset:name>ДЗ</dcsset:name>
+								<dcsset:order>
+									<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+								</dcsset:order>
+								<dcsset:selection>
+									<dcsset:item xsi:type="dcsset:SelectedItemAuto">
+										<dcsset:use>false</dcsset:use>
+									</dcsset:item>
+									<dcsset:item xsi:type="dcsset:SelectedItemField">
+										<dcsset:use>false</dcsset:use>
+										<dcsset:field>Период</dcsset:field>
+									</dcsset:item>
+									<dcsset:item xsi:type="dcsset:SelectedItemField">
+										<dcsset:use>false</dcsset:use>
+										<dcsset:field>Склад</dcsset:field>
+									</dcsset:item>
+									<dcsset:item xsi:type="dcsset:SelectedItemField">
+										<dcsset:use>false</dcsset:use>
+										<dcsset:field>НомерСмены</dcsset:field>
+									</dcsset:item>
+									<dcsset:item xsi:type="dcsset:SelectedItemField">
+										<dcsset:use>false</dcsset:use>
+										<dcsset:field>ОРП</dcsset:field>
+									</dcsset:item>
+									<dcsset:item xsi:type="dcsset:SelectedItemField">
+										<dcsset:field>Документ</dcsset:field>
+									</dcsset:item>
+									<dcsset:item xsi:type="dcsset:SelectedItemField">
+										<dcsset:field>НомерЧека</dcsset:field>
+									</dcsset:item>
+									<dcsset:item xsi:type="dcsset:SelectedItemField">
+										<dcsset:field>Пользователь</dcsset:field>
+									</dcsset:item>
+									<dcsset:item xsi:type="dcsset:SelectedItemField">
+										<dcsset:use>false</dcsset:use>
+										<dcsset:field>Продажа_Возврат</dcsset:field>
+									</dcsset:item>
+									<dcsset:item xsi:type="dcsset:SelectedItemField">
+										<dcsset:use>false</dcsset:use>
+										<dcsset:field>Нал_БезНал</dcsset:field>
+									</dcsset:item>
+									<dcsset:item xsi:type="dcsset:SelectedItemField">
+										<dcsset:field>СуммаДокумента</dcsset:field>
+									</dcsset:item>
+									<dcsset:item xsi:type="dcsset:SelectedItemField">
+										<dcsset:field>СуммаЧека</dcsset:field>
+									</dcsset:item>
+									<dcsset:item xsi:type="dcsset:SelectedItemField">
+										<dcsset:field>СуммаОРП</dcsset:field>
+									</dcsset:item>
+								</dcsset:selection>
+								<dcsset:conditionalAppearance>
+									<dcsset:item>
+										<dcsset:selection>
+											<dcsset:item>
+												<dcsset:field>СуммаОРП</dcsset:field>
+											</dcsset:item>
+											<dcsset:item>
+												<dcsset:field>СуммаZОтчетаОРП</dcsset:field>
+											</dcsset:item>
+											<dcsset:item>
+												<dcsset:field>СуммаДокументаОРП</dcsset:field>
+											</dcsset:item>
+										</dcsset:selection>
+										<dcsset:filter/>
+										<dcsset:appearance>
+											<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+												<dcscor:parameter>BackColor</dcscor:parameter>
+												<dcscor:value xsi:type="v8ui:Color">#FFFFFF</dcscor:value>
+											</dcscor:item>
+											<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+												<dcscor:parameter>TextColor</dcscor:parameter>
+												<dcscor:value xsi:type="v8ui:Color">#FFFFFF</dcscor:value>
+											</dcscor:item>
+											<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+												<dcscor:parameter>Text</dcscor:parameter>
+												<dcscor:value xsi:type="xs:string"/>
+											</dcscor:item>
+										</dcsset:appearance>
+									</dcsset:item>
+								</dcsset:conditionalAppearance>
+							</dcsset:item>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:row>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

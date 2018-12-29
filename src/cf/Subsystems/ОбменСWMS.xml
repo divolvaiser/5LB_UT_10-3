@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<Subsystem uuid="899c73ed-783d-4fcd-b2fa-3a557d30bda9">
+		<Properties>
+			<Name>ОбменСWMS</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен с WMS</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>false</IncludeInCommandInterface>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.EMEWMSERPEngine</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.EmeWmsЭкспорт</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.EmeWmsЭкспортНоменклатуры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.EmeWmsИмпорт</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.EmeWmsУтилиты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.EmeWmsПутьДоERPEngine</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Номенклатура</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ДатаНачалаИспользованияИнтеграцииСEME_WMS</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СтатусыWMS</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ChartOfCharacteristicTypes.ПраваПользователей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.EmeWmsПометкиКЭкспортуНоменклатуры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.EmeWmsЭкспортЗаказовПоставщикам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.EmeWmsИмпортПоступленийТоваровУслуг</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ОбъектыИнтеграцииС_WMS</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.EmeWmsПометкиКЭкспортуЗаказовПоставщикам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Склады</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ЗаказПоставщику</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.EmeWms_ИспользуемыеВидыОбмена</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ЕдиницыИзмерения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.EmeWmsЭкспортЗаказовПокупателей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.EmeWmsОбмен</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ЗаказПокупателя</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.EmeWmsИмпортСписанийТоваров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.EmeWmsИмпортРасходныхОрдеров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.EmeWmsИмпортПеремещенийТоваров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.EmeWmsИмпортОстатковТоваров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.EmeWmsИмпортОприходованийТоваров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.EmeWmsИмпортКомплектацийНоменклатуры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.EmeWmsИмпортИнвентаризацийТоваров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.EmeWmsИмпортВозвратовТоваровОтПокупателей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.EmeWmsЭкспортПеремещенийТоваров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.EmeWmsЭкспортОстатковТоваров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.EmeWmsЭкспортКомплектацийНоменклатуры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.EmeWmsЭкспортВозвратовТоваровОтПокупателей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.EmeWmsУчетнаяЗаписьЭлектроннойПочты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.EmeWmsСписокРассылкиДиагностики</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПоступлениеТоваровУслуг</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.EmeWmsПометкиКЭкспортуЗаказовПокупателей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.EmeWmsПометкиКЭкспортуПеремещенийТоваров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.EmeWmsПометкиКЭкспортуВозвратовТоваровОтПокупателей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.EmeWmsПометкиКЭкспортуКомплектацийНоменклатуры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.EmeWmsНесоответствиеОтгрузокЗаказамПокупателей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.НастройкаПараметровУчета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.EmeWmsПометкиКЭкспортуВозвратовТоваровПоставщикам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.EmeWmsПометкиКЭкспортуПоступленийТоваров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ВозвратТоваровПоставщику</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ВозвратТоваровОтПокупателя</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПеремещениеТоваров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.EmeWmsЭкспортироватьПеремещенияИзМагазиновНаСклад_ASN_трансфер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.EmeWmsЭкспортироватьВозвратыТоваровОтПокупателя_ASN_возврат</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.EmeWmsЭкспортироватьПеремещенияНаМагазины</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.EmeWmsИмпортироватьПоступленияТоваров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.EmeWmsЭкспортироватьЗаказыПокупателей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.EmeWmsЭкспортироватьЗаказыПоставщикам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.EmeWmsИмпортDespatchОбрабатыватьСРасхождениями</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.EmeWmsИмпортDespatchПроставлятьСобрано</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.EmeWmsНеУчитыватьДопТоварыСоСроками</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.EmeWmsСрокиГодностиВСериях</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

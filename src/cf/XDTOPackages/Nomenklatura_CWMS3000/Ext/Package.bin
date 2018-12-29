@@ -1,0 +1,123 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="cwms3000.ru/nom">
+	<import namespace="urn:cwms3000.ru:BaseTypes:1.0.0"/>
+	<property name="NOMENKLATURA">
+		<typeDef xsi:type="ObjectType">
+			<property xmlns:d4p1="cwms3000.ru/nom" name="NOM" type="d4p1:NomType" upperBound="-1"/>
+		</typeDef>
+	</property>
+	<objectType name="BarcodeType">
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="BAR_CODE" type="d3p1:Text255Type"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="UNIT_TYP" type="d3p1:Text255Type"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="TYP" type="d3p1:Text100Type"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="REPLACE_BARCODE" type="d3p1:Int01Type" lowerBound="0"/>
+	</objectType>
+	<objectType name="BarcodesType">
+		<property xmlns:d3p1="cwms3000.ru/nom" name="BARCODE" type="d3p1:BarcodeType" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="ChangeNomType">
+		<property xmlns:d3p1="cwms3000.ru/nom" name="NOM" type="d3p1:NomChangeNomType" upperBound="-1"/>
+	</objectType>
+	<objectType name="NomChangeNomType">
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="CODE" type="d3p1:Text255Type"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="COEFF" type="d3p1:NumericType"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="ORD" type="d3p1:IntegerType"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="CUSTOMER_ID" type="d3p1:Text255Type" lowerBound="0"/>
+	</objectType>
+	<objectType name="NomContentCodeType">
+		<property name="CODE_ID" type="xs:string" lowerBound="1" form="Attribute"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="CNT" type="d3p1:IntegerType"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="UNIT_TYPE" type="d3p1:Text255Type"/>
+	</objectType>
+	<objectType name="NomContentType">
+		<property xmlns:d3p1="cwms3000.ru/nom" name="CODE" type="d3p1:NomContentCodeType" upperBound="-1"/>
+	</objectType>
+	<objectType name="NomType">
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="CODE" type="d3p1:Text100Type"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="I_NOM_ID" type="d3p1:Text100Type" lowerBound="0"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="NAME" type="d3p1:Text100Type"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="GROUP_NAME" type="d3p1:Text100Type" lowerBound="0"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="UNIT_NAME" type="d3p1:Text100Type"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="UNIT_OP_NAME" type="d3p1:Text100Type" lowerBound="0"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="UNIT_CL_NAME" type="d3p1:Text100Type" lowerBound="0"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="NOM_TYP" type="d3p1:Text100Type" lowerBound="0"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="EXPIRE" type="d3p1:IntegerType" lowerBound="0"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="SALE_DAYS" type="d3p1:IntegerType" lowerBound="0"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="STORAGE_TEMP" type="d3p1:Text255Type" lowerBound="0"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="DSC" type="d3p1:Text255Type" lowerBound="0"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="ABC_GROUP" type="d3p1:IntegerType" lowerBound="0"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="GOST" type="d3p1:Text255Type" lowerBound="0"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="ID_IMPORTER" type="d3p1:Text100Type" lowerBound="0"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="ID_PRODUCER" type="d3p1:Text100Type" lowerBound="0"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="ID_SUPPLIER" type="d3p1:Text100Type" lowerBound="0"/>
+		<property xmlns:d3p1="cwms3000.ru/nom" name="STORE_AREAS" type="d3p1:StoreAreasType" lowerBound="0"/>
+		<property xmlns:d3p1="cwms3000.ru/nom" name="PALLS_INFO" type="d3p1:PallInfosType" lowerBound="0"/>
+		<property xmlns:d3p1="cwms3000.ru/nom" name="UNITS_INFO" type="d3p1:UnitsInfoType"/>
+		<property xmlns:d3p1="cwms3000.ru/nom" name="OTHER_CODES" type="d3p1:OtherCodesType" lowerBound="0"/>
+		<property xmlns:d3p1="cwms3000.ru/nom" name="NOM_CONTENT" type="d3p1:NomContentType" lowerBound="0"/>
+		<property xmlns:d3p1="cwms3000.ru/nom" name="BARCODES" type="d3p1:BarcodesType" lowerBound="0"/>
+		<property xmlns:d3p1="cwms3000.ru/nom" name="NOM_CHANGE_NOM" type="d3p1:ChangeNomType" lowerBound="0"/>
+		<property name="EXT_PARAMS" lowerBound="0">
+			<typeDef xsi:type="ObjectType">
+				<property xmlns:d5p1="cwms3000.ru/nom" name="PARAM" type="d5p1:ParamType" lowerBound="0" upperBound="-1"/>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="OtherCodeType">
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="CODE" type="d3p1:Text255Type"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="BARCODE" type="d3p1:Text50Type" lowerBound="0"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="BARCODETYPE" type="d3p1:Text50Type" lowerBound="0"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="REPLACE_BARCODE" type="d3p1:Int01Type" lowerBound="0"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="DSC" type="d3p1:Text255Type" lowerBound="0"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="TYPE" type="d3p1:Text255Type" lowerBound="0"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="ID_CLIENT" type="d3p1:Text255Type" lowerBound="0"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="ARTK_CLIENT" type="d3p1:Text255Type" lowerBound="0"/>
+	</objectType>
+	<objectType name="OtherCodesType">
+		<property xmlns:d3p1="cwms3000.ru/nom" name="CODE" type="d3p1:OtherCodeType" upperBound="-1"/>
+	</objectType>
+	<objectType name="PallInfosType">
+		<property xmlns:d3p1="cwms3000.ru/nom" name="PALL" type="d3p1:PallType" upperBound="-1"/>
+	</objectType>
+	<objectType name="PallType">
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="TYPE" type="d3p1:IntegerType"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="BLCK" type="d3p1:IntegerType" lowerBound="0"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="LENGTH" type="d3p1:IntegerType" lowerBound="0"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="WIDTH" type="d3p1:IntegerType" lowerBound="0"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="HEIGHT" type="d3p1:IntegerType" lowerBound="0"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="WEIGHT_NETTO" type="d3p1:NumericType" lowerBound="0"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="WEIGHT_BRUTTO" type="d3p1:NumericType" lowerBound="0"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="LAYER_CNT" type="d3p1:IntegerType" lowerBound="0"/>
+	</objectType>
+	<objectType name="ParamType">
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="PARAM_NAME" type="d3p1:Text50Type"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="PARAM_VALUE" type="d3p1:Text255Type"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="PARAM_CAPTION" type="d3p1:Text255Type" lowerBound="0"/>
+	</objectType>
+	<objectType name="StoreAreasType">
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="STORE_AREA" type="d3p1:Text255Type" upperBound="-1"/>
+	</objectType>
+	<objectType name="UnitInfoType">
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="TYPE" type="d3p1:Text255Type"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="CNT" type="d3p1:IntegerType"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="BARCODE" type="d3p1:Text50Type" lowerBound="0"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="BARCODETYPE" type="d3p1:Text50Type" lowerBound="0"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="REPLACE_BARCODE" type="d3p1:Int01Type" lowerBound="0"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="WEIGHT_NETTO" type="d3p1:NumericType" lowerBound="0"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="WEIGHT_BRUTTO" type="d3p1:NumericType" lowerBound="0"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="PRICE" type="d3p1:NumericType" lowerBound="0"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="LENGTH" type="d3p1:IntegerType" lowerBound="0"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="WIDTH" type="d3p1:IntegerType" lowerBound="0"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="HEIGHT" type="d3p1:IntegerType" lowerBound="0"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="NDS" type="d3p1:NumericType" lowerBound="0"/>
+		<property xmlns:d3p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="VOLUME" type="d3p1:NumericType" lowerBound="0"/>
+		<property name="EXPONENT" lowerBound="0">
+			<typeDef xmlns:d4p1="urn:cwms3000.ru:BaseTypes:1.0.0" xsi:type="ValueType" base="d4p1:IntegerType" variety="Atomic">
+				<enumeration>-1</enumeration>
+				<enumeration>1</enumeration>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="UnitsInfoType">
+		<property xmlns:d3p1="cwms3000.ru/nom" name="UNIT" type="d3p1:UnitInfoType" upperBound="-1"/>
+	</objectType>
+</package>

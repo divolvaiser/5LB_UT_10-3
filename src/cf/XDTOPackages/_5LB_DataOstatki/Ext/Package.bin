@@ -1,0 +1,10 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://www.Ostatki.org/Ostatki">
+	<objectType name="StructuraOstatki">
+		<property name="Tovar" type="xs:string"/>
+		<property name="EdIzm" type="xs:string"/>
+		<property name="Kolich" type="xs:float"/>
+	</objectType>
+	<objectType name="Tz" open="true">
+		<property xmlns:d3p1="http://www.Ostatki.org/Ostatki" name="Element" type="d3p1:StructuraOstatki" upperBound="-1"/>
+	</objectType>
+</package>

@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<InformationRegister uuid="850519b3-50e0-4f8c-9288-e760a8e2ef9a">
+		<InternalInfo>
+			<xr:GeneratedType name="InformationRegisterRecord._5LB_ДатаЗапретаРедактированияДокументовТовародвижения" category="Record">
+				<xr:TypeId>6992af3f-0e52-4709-b7c4-53747d4a1399</xr:TypeId>
+				<xr:ValueId>285dcfdd-13d4-46c4-9859-87ce3cf159ee</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterManager._5LB_ДатаЗапретаРедактированияДокументовТовародвижения" category="Manager">
+				<xr:TypeId>a207ab3d-c9f5-4593-9735-e5469b18c5bb</xr:TypeId>
+				<xr:ValueId>e59a3e6e-95b0-46f8-a4b0-5380199039e1</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterSelection._5LB_ДатаЗапретаРедактированияДокументовТовародвижения" category="Selection">
+				<xr:TypeId>7c3c5697-4cf2-48dc-9e59-030c2841f2b9</xr:TypeId>
+				<xr:ValueId>f02e14e6-d97b-4ab8-a13c-0c260c0d5ddb</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterList._5LB_ДатаЗапретаРедактированияДокументовТовародвижения" category="List">
+				<xr:TypeId>680a2f08-1513-45f2-9c34-6b9cd9c94f53</xr:TypeId>
+				<xr:ValueId>519d5bf3-d5a1-41b2-9a1c-f9ce208b005c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordSet._5LB_ДатаЗапретаРедактированияДокументовТовародвижения" category="RecordSet">
+				<xr:TypeId>65e4ad86-5bb0-4f4b-ab8c-63c9fefdf14a</xr:TypeId>
+				<xr:ValueId>c5ff65de-86af-4310-84e9-7f05399d77cc</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordKey._5LB_ДатаЗапретаРедактированияДокументовТовародвижения" category="RecordKey">
+				<xr:TypeId>518c1b09-a335-4bcf-9e0f-99a0e3007248</xr:TypeId>
+				<xr:ValueId>5398aacb-6081-4d3d-b5c5-0b936c2fb20e</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordManager._5LB_ДатаЗапретаРедактированияДокументовТовародвижения" category="RecordManager">
+				<xr:TypeId>25ba3c0d-0380-4a91-b634-e157185d4d5b</xr:TypeId>
+				<xr:ValueId>e9ba3b8e-b157-4a19-b7d2-0321936367b7</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>_5LB_ДатаЗапретаРедактированияДокументовТовародвижения</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата запрета редактирования документов товародвижения</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>false</UseStandardCommands>
+			<EditType>InDialog</EditType>
+			<DefaultRecordForm/>
+			<DefaultListForm/>
+			<AuxiliaryRecordForm/>
+			<AuxiliaryListForm/>
+			<InformationRegisterPeriodicity>Day</InformationRegisterPeriodicity>
+			<WriteMode>Independent</WriteMode>
+			<MainFilterOnPeriod>true</MainFilterOnPeriod>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<DataLockControlMode>Automatic</DataLockControlMode>
+			<FullTextSearch>DontUse</FullTextSearch>
+			<EnableTotalsSliceFirst>false</EnableTotalsSliceFirst>
+			<EnableTotalsSliceLast>false</EnableTotalsSliceLast>
+			<RecordPresentation/>
+			<ExtendedRecordPresentation/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Dimension uuid="8141aa25-b0cc-4572-85c7-c623dcf60b51">
+				<Properties>
+					<Name>Склад</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Склад</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Склады</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>true</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Master>true</Master>
+					<MainFilter>true</MainFilter>
+					<DenyIncompleteValues>true</DenyIncompleteValues>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+				</Properties>
+			</Dimension>
+		</ChildObjects>
+	</InformationRegister>
+</MetaDataObject>

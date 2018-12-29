@@ -1,0 +1,64 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="cwms3000.ru/out_fb">
+	<import namespace="urn:cwms3000.ru:BaseTypes:1.0.0"/>
+	<property name="DOC">
+		<typeDef xsi:type="ObjectType">
+			<property name="DOC_OUT">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="NUMBER" type="d6p1:Text255Type"/>
+					<property xmlns:d6p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="ID_DOC" type="d6p1:Text255Type"/>
+					<property xmlns:d6p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="DATE" type="d6p1:DateTimeType"/>
+					<property xmlns:d6p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="STATUS" type="d6p1:IntegerType"/>
+					<property xmlns:d6p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="STATUS_DSC" type="d6p1:Text100Type"/>
+					<property xmlns:d6p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="OLD_STATUS" type="d6p1:IntegerType" lowerBound="0"/>
+					<property xmlns:d6p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="OLD_STATUS_DSC" type="d6p1:Text100Type" lowerBound="0"/>
+					<property xmlns:d6p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="TYPE" type="d6p1:Text100Type"/>
+					<property name="CONTENT">
+						<typeDef xsi:type="ObjectType">
+							<property name="CODE" upperBound="-1">
+								<typeDef xsi:type="ObjectType">
+									<property xmlns:d10p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="code_id" type="d10p1:Text100Type" lowerBound="0" form="Attribute"/>
+									<property xmlns:d10p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="CNT" type="d10p1:IntegerType"/>
+									<property xmlns:d10p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="UNIT_TYPE" type="d10p1:IntegerType"/>
+									<property xmlns:d10p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="ST_PART" type="d10p1:Text100Type"/>
+									<property xmlns:d10p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="EXPIRE_DATE" type="d10p1:DateTimeType"/>
+									<property xmlns:d10p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="NOM_TYPE" type="d10p1:IntegerType"/>
+									<property xmlns:d10p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="ACTUAL_CNT" type="d10p1:IntegerType"/>
+									<property name="RESERVE_DETAIL" upperBound="-1">
+										<typeDef xsi:type="ObjectType">
+											<property xmlns:d12p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="CNT" type="d12p1:IntegerType"/>
+											<property xmlns:d12p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="UNIT_TYPE" type="d12p1:IntegerType"/>
+											<property xmlns:d12p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="ST_PART" type="d12p1:Text100Type"/>
+											<property xmlns:d12p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="EXPIRE_DATE" type="d12p1:DateTimeType"/>
+											<property xmlns:d12p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="NOM_TYPE" type="d12p1:IntegerType"/>
+											<property xmlns:d12p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="PLACES_CNT" type="d12p1:IntegerType"/>
+										</typeDef>
+									</property>
+									<property name="EXT_PARAMS" lowerBound="0">
+										<typeDef xsi:type="ObjectType">
+											<property name="PARAM" upperBound="-1">
+												<typeDef xsi:type="ObjectType">
+													<property xmlns:d14p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="PARAM_NAME" type="d14p1:Text100Type"/>
+													<property xmlns:d14p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="PARAM_VALUE" type="d14p1:Text255Type"/>
+												</typeDef>
+											</property>
+										</typeDef>
+									</property>
+								</typeDef>
+							</property>
+						</typeDef>
+					</property>
+					<property name="EXT_PARAMS" lowerBound="0">
+						<typeDef xsi:type="ObjectType">
+							<property name="PARAM" upperBound="-1">
+								<typeDef xsi:type="ObjectType">
+									<property xmlns:d10p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="PARAM_NAME" type="d10p1:Text100Type"/>
+									<property xmlns:d10p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="PARAM_VALUE" type="d10p1:Text255Type"/>
+								</typeDef>
+							</property>
+						</typeDef>
+					</property>
+				</typeDef>
+			</property>
+		</typeDef>
+	</property>
+</package>

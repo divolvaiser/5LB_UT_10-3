@@ -1,0 +1,16 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="urn:cwms3000.ru:BaseTypes:1.0.0">
+	<valueType name="BaseTextType" base="xs:string" variety="Atomic"/>
+	<valueType name="DateTimeType" base="xs:dateTime" variety="Atomic"/>
+	<valueType name="DateType" base="xs:date" variety="Atomic"/>
+	<valueType name="Int01Type" base="xs:integer" variety="Atomic">
+		<enumeration>0</enumeration>
+		<enumeration>1</enumeration>
+	</valueType>
+	<valueType name="IntegerType" base="xs:integer" variety="Atomic"/>
+	<valueType name="NumericType" base="xs:decimal" variety="Atomic"/>
+	<valueType xmlns:d2p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="Text100Type" base="d2p1:BaseTextType" variety="Atomic" minLength="1" maxLength="100"/>
+	<valueType xmlns:d2p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="Text10Type" base="d2p1:BaseTextType" variety="Atomic" minLength="1" maxLength="10"/>
+	<valueType xmlns:d2p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="Text150Type" base="d2p1:BaseTextType" variety="Atomic" minLength="1" maxLength="100"/>
+	<valueType xmlns:d2p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="Text255Type" base="d2p1:BaseTextType" variety="Atomic" minLength="1" maxLength="255"/>
+	<valueType xmlns:d2p1="urn:cwms3000.ru:BaseTypes:1.0.0" name="Text50Type" base="d2p1:BaseTextType" variety="Atomic" minLength="1" maxLength="50"/>
+</package>

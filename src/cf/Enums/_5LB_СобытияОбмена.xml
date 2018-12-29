@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<Enum uuid="6099e70d-2fd2-4e3e-8d55-e14acc8f3030">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef._5LB_СобытияОбмена" category="Ref">
+				<xr:TypeId>ea518272-6168-404a-96d6-802463e220ea</xr:TypeId>
+				<xr:ValueId>d698942b-36e8-45b9-8350-dcef97c7d0fb</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager._5LB_СобытияОбмена" category="Manager">
+				<xr:TypeId>8c8e9cc0-888f-4ef0-823d-e5fe07d69825</xr:TypeId>
+				<xr:ValueId>e919f8f4-a81d-406a-9ab2-a5e07ae3d9dd</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList._5LB_СобытияОбмена" category="List">
+				<xr:TypeId>57308354-24a8-4d6d-9335-8a14328d3cb0</xr:TypeId>
+				<xr:ValueId>293c14e3-3d23-41f0-a91a-26909bc40394</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>_5LB_СобытияОбмена</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>События обмена (5LB)</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>События обмена (5LB)</Comment>
+			<UseStandardCommands>false</UseStandardCommands>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="70224c13-2073-40c9-85d2-1b3fe2b9c4de">
+				<Properties>
+					<Name>РегистрацияИзменений</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Регистрация изменений в узле</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Регистрация изменений в узле</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="44905328-0d9b-4430-9c0a-72d93667ff5a">
+				<Properties>
+					<Name>ВыгрузкаДанных</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выгрузка данных в файл обмена</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Выгрузка данных в файл обмена</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="34c4a20e-f6d7-4981-b457-0ca4abf43bba">
+				<Properties>
+					<Name>ЗагрузкаДанных</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Загрузка данных из файла обмена</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Загрузка данных из файла обмена</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="32b1065b-0d18-48e2-bcb8-7d78d4dc226c">
+				<Properties>
+					<Name>Регламент</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Регламент (выполнение регламента обмена)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Регламент (выполнение регламента обмена)</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="ce9d0660-ee79-4a05-9bf4-86a512e8e1a5">
+				<Properties>
+					<Name>Прочее</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Прочее</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Прочее</Comment>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

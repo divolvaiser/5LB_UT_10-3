@@ -1,0 +1,700 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/"
+		xmlns:soap12bind="http://schemas.xmlsoap.org/wsdl/soap12/"
+		xmlns:soapbind="http://schemas.xmlsoap.org/wsdl/soap/"
+		xmlns:tns="www.test.com"
+		xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy"
+		xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		xmlns:xsd1="http://www.DataDoc5LB/DataDoc5LB"
+		xmlns:xsd2="http://www.DataPrihodUhod5LB/DataPrihodUhod5LB"
+		xmlns:xsd3="http://www.DataSellerControl"
+		xmlns:xsd4="www.test.com"
+		name="_5LB_ДляВсехБаз"
+		targetNamespace="www.test.com">
+	<types>
+		<xs:schema xmlns:tns="http://www.DataDoc5LB/DataDoc5LB"
+				xmlns:xs="http://www.w3.org/2001/XMLSchema"
+				xmlns:xsd1="http://www.DataPrihodUhod5LB/DataPrihodUhod5LB"
+				xmlns:xsd2="http://www.DataDoc5LB/DataDoc5LB"
+				targetNamespace="http://www.DataDoc5LB/DataDoc5LB"
+				attributeFormDefault="unqualified"
+				elementFormDefault="qualified">
+			<xs:complexType name="Documents">
+				<xs:sequence>
+					<xs:element name="Element"
+							type="xsd2:OneDocument"
+							maxOccurs="unbounded"/>
+					<xs:any namespace="##any"
+							processContents="lax"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+				<xs:anyAttribute namespace="##any"
+						processContents="lax"/>
+			</xs:complexType>
+			<xs:complexType name="OneDocument">
+				<xs:sequence>
+					<xs:element name="TzTovar"
+							type="xsd2:TzTovar"/>
+					<xs:element name="VidDoc"
+							type="xs:string"/>
+					<xs:element name="NomerDoc"
+							type="xs:string"/>
+					<xs:element name="DataDoc"
+							type="xs:dateTime"/>
+					<xs:element name="Organization"
+							type="xs:string"/>
+					<xs:element name="Magazin"
+							type="xs:string"/>
+					<xs:element name="Prodavec"
+							type="xs:string"/>
+					<xs:element name="CenaVkluchaetNDS"
+							type="xs:boolean"/>
+					<xs:element name="Summa"
+							type="xs:float"/>
+					<xs:element name="NomerDocVozvrat"
+							type="xs:string"/>
+					<xs:element name="DataDocVozvrat"
+							type="xs:dateTime"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="StructuraTovar">
+				<xs:sequence>
+					<xs:element name="Tovar"
+							type="xs:string"/>
+					<xs:element name="Harakter"
+							type="xs:string"/>
+					<xs:element name="EdIzm"
+							type="xs:string"/>
+					<xs:element name="Kolich"
+							type="xs:float"/>
+					<xs:element name="StavkaNDS"
+							type="xs:float"/>
+					<xs:element name="Cena"
+							type="xs:float"/>
+					<xs:element name="Summa"
+							type="xs:float"/>
+					<xs:element name="SummaNDS"
+							type="xs:float"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="StructureObjectDate">
+				<xs:sequence>
+					<xs:element name="Object"
+							type="xs:string"/>
+					<xs:element name="Date"
+							type="xs:dateTime"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="StructurePayment">
+				<xs:sequence>
+					<xs:element name="TypeOfPayment"
+							type="xs:string"/>
+					<xs:element name="TypeOfOperation"
+							type="xs:string"/>
+					<xs:element name="Shop"
+							type="xs:string"/>
+					<xs:element name="Date"
+							type="xs:date"/>
+					<xs:element name="Seller"
+							type="xs:string"/>
+					<xs:element name="Summa"
+							type="xs:float"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="TzObjectDate">
+				<xs:sequence>
+					<xs:element name="Element"
+							type="xsd2:StructureObjectDate"
+							maxOccurs="unbounded"/>
+					<xs:any namespace="##any"
+							processContents="lax"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+				<xs:anyAttribute namespace="##any"
+						processContents="lax"/>
+			</xs:complexType>
+			<xs:complexType name="TzStructurePayment">
+				<xs:sequence>
+					<xs:element name="Element"
+							type="xsd2:StructurePayment"
+							maxOccurs="unbounded"/>
+					<xs:any namespace="##any"
+							processContents="lax"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+				<xs:anyAttribute namespace="##any"
+						processContents="lax"/>
+			</xs:complexType>
+			<xs:complexType name="TzTovar">
+				<xs:sequence>
+					<xs:element name="Element"
+							type="xsd2:StructuraTovar"
+							maxOccurs="unbounded"/>
+					<xs:any namespace="##any"
+							processContents="lax"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+				<xs:anyAttribute namespace="##any"
+						processContents="lax"/>
+			</xs:complexType>
+		</xs:schema>
+		<xs:schema xmlns:tns="http://www.DataPrihodUhod5LB/DataPrihodUhod5LB"
+				xmlns:xs="http://www.w3.org/2001/XMLSchema"
+				xmlns:xsd1="http://www.DataPrihodUhod5LB/DataPrihodUhod5LB"
+				xmlns:xsd2="http://www.DataDoc5LB/DataDoc5LB"
+				targetNamespace="http://www.DataPrihodUhod5LB/DataPrihodUhod5LB"
+				attributeFormDefault="unqualified"
+				elementFormDefault="qualified">
+			<xs:complexType name="Structura">
+				<xs:sequence>
+					<xs:element name="Sotrudnik"
+							type="xs:string"/>
+					<xs:element name="Magazin"
+							type="xs:string"/>
+					<xs:element name="DataDen"
+							type="xs:date"/>
+					<xs:element name="DataTimePrihod"
+							type="xs:dateTime"/>
+					<xs:element name="DataTimeUhod"
+							type="xs:dateTime"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="Tz">
+				<xs:sequence>
+					<xs:element name="Element"
+							type="xsd1:Structura"
+							maxOccurs="unbounded"/>
+					<xs:any namespace="##any"
+							processContents="lax"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+				<xs:anyAttribute namespace="##any"
+						processContents="lax"/>
+			</xs:complexType>
+		</xs:schema>
+		<xs:schema xmlns:tns="http://www.DataSellerControl"
+				xmlns:xs="http://www.w3.org/2001/XMLSchema"
+				xmlns:xsd1="http://www.DataPrihodUhod5LB/DataPrihodUhod5LB"
+				xmlns:xsd2="http://www.DataDoc5LB/DataDoc5LB"
+				targetNamespace="http://www.DataSellerControl"
+				attributeFormDefault="unqualified"
+				elementFormDefault="qualified">
+			<xs:complexType name="Structura">
+				<xs:sequence>
+					<xs:element name="DataSmeny"
+							type="xs:date"/>
+					<xs:element name="Magazin"
+							type="xs:string"/>
+					<xs:element name="User"
+							type="xs:string"/>
+					<xs:element name="SummaNalBegin"
+							type="xs:float"/>
+					<xs:element name="SummaNalEnd"
+							type="xs:float"/>
+					<xs:element name="SummaSalesWithReturns"
+							type="xs:float"/>
+					<xs:element name="SummaOfPaymentCardsWithReturns"
+							type="xs:float"/>
+					<xs:element name="SummaEncashment"
+							type="xs:float"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="Tz">
+				<xs:sequence>
+					<xs:element name="Element"
+							type="xsd3:Structura"
+							maxOccurs="unbounded"/>
+					<xs:any namespace="##any"
+							processContents="lax"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+				<xs:anyAttribute namespace="##any"
+						processContents="lax"/>
+			</xs:complexType>
+		</xs:schema>
+		<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+				xmlns:xs1="http://www.DataDoc5LB/DataDoc5LB"
+				xmlns:xs2="http://www.DataPrihodUhod5LB/DataPrihodUhod5LB"
+				xmlns:xs3="http://www.DataSellerControl"
+				xmlns:xs4="www.test.com"
+				xmlns:xsd1="http://www.DataPrihodUhod5LB/DataPrihodUhod5LB"
+				xmlns:xsd2="http://www.DataDoc5LB/DataDoc5LB"
+				targetNamespace="www.test.com"
+				elementFormDefault="qualified">
+			<xs:import namespace="http://www.DataDoc5LB/DataDoc5LB"/>
+			<xs:import namespace="http://www.DataPrihodUhod5LB/DataPrihodUhod5LB"/>
+			<xs:import namespace="http://www.DataSellerControl"/>
+			<xs:element name="GetPrihodUhod">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Data1"
+								type="xs:date"/>
+						<xs:element name="Data2"
+								type="xs:date"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="GetPrihodUhodResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="return"
+								type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="GetDocuments">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Data1"
+								type="xs:date"/>
+						<xs:element name="Data2"
+								type="xs:date"/>
+						<xs:element name="VidDoc"
+								type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="GetDocumentsResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="return"
+								type="xsd2:Documents"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="DatePrintingPriceLabels">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Data1"
+								type="xs:date"/>
+						<xs:element name="Data2"
+								type="xs:date"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="DatePrintingPriceLabelsResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="return"
+								type="xsd2:TzObjectDate"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="PaymentMethodsRetailSales">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Data1"
+								type="xs:date"/>
+						<xs:element name="Data2"
+								type="xs:date"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="PaymentMethodsRetailSalesResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="return"
+								type="xsd2:TzStructurePayment"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="GetPriceForNode">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Data1"
+								type="xs:date"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="GetPriceForNodeResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="return"
+								type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="GetOstatokNomenklatur">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Data1"
+								type="xs:date"/>
+						<xs:element name="Sklad"
+								type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="GetOstatokNomenklaturResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="return"
+								type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="GetTheSellerControlOfFunds">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Data1"
+								type="xs:date"/>
+						<xs:element name="Data2"
+								type="xs:date"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="GetTheSellerControlOfFundsResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="return"
+								type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="DownloadOnLineCheck">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="NomerDoc"
+								type="xs:string"/>
+						<xs:element name="DataDoc"
+								type="xs:dateTime"/>
+						<xs:element name="Held"
+								type="xs:boolean"/>
+						<xs:element name="Organization"
+								type="xs:string"/>
+						<xs:element name="VidOperation"
+								type="xs:string"/>
+						<xs:element name="Magazin"
+								type="xs:string"/>
+						<xs:element name="NomerCheck"
+								type="xs:string"/>
+						<xs:element name="StatusCheck"
+								type="xs:string"/>
+						<xs:element name="Prodavec"
+								type="xs:string"/>
+						<xs:element name="SummaDoc"
+								type="xs:float"/>
+						<xs:element name="OplataKartami"
+								type="xs:float"/>
+						<xs:element name="OplataPodarSertifikatami"
+								type="xs:float"/>
+						<xs:element name="Tovar"
+								type="xsd2:TzTovar"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="DownloadOnLineCheckResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="return"
+								type="xs:boolean"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:schema>
+	</types>
+	<message name="GetPrihodUhodRequestMessage">
+		<part name="parameters"
+				element="tns:GetPrihodUhod"/>
+	</message>
+	<message name="GetPrihodUhodResponseMessage">
+		<part name="parameters"
+				element="tns:GetPrihodUhodResponse"/>
+	</message>
+	<message name="GetDocumentsRequestMessage">
+		<part name="parameters"
+				element="tns:GetDocuments"/>
+	</message>
+	<message name="GetDocumentsResponseMessage">
+		<part name="parameters"
+				element="tns:GetDocumentsResponse"/>
+	</message>
+	<message name="DatePrintingPriceLabelsRequestMessage">
+		<part name="parameters"
+				element="tns:DatePrintingPriceLabels"/>
+	</message>
+	<message name="DatePrintingPriceLabelsResponseMessage">
+		<part name="parameters"
+				element="tns:DatePrintingPriceLabelsResponse"/>
+	</message>
+	<message name="PaymentMethodsRetailSalesRequestMessage">
+		<part name="parameters"
+				element="tns:PaymentMethodsRetailSales"/>
+	</message>
+	<message name="PaymentMethodsRetailSalesResponseMessage">
+		<part name="parameters"
+				element="tns:PaymentMethodsRetailSalesResponse"/>
+	</message>
+	<message name="GetPriceForNodeRequestMessage">
+		<part name="parameters"
+				element="tns:GetPriceForNode"/>
+	</message>
+	<message name="GetPriceForNodeResponseMessage">
+		<part name="parameters"
+				element="tns:GetPriceForNodeResponse"/>
+	</message>
+	<message name="GetOstatokNomenklaturRequestMessage">
+		<part name="parameters"
+				element="tns:GetOstatokNomenklatur"/>
+	</message>
+	<message name="GetOstatokNomenklaturResponseMessage">
+		<part name="parameters"
+				element="tns:GetOstatokNomenklaturResponse"/>
+	</message>
+	<message name="GetTheSellerControlOfFundsRequestMessage">
+		<part name="parameters"
+				element="tns:GetTheSellerControlOfFunds"/>
+	</message>
+	<message name="GetTheSellerControlOfFundsResponseMessage">
+		<part name="parameters"
+				element="tns:GetTheSellerControlOfFundsResponse"/>
+	</message>
+	<message name="DownloadOnLineCheckRequestMessage">
+		<part name="parameters"
+				element="tns:DownloadOnLineCheck"/>
+	</message>
+	<message name="DownloadOnLineCheckResponseMessage">
+		<part name="parameters"
+				element="tns:DownloadOnLineCheckResponse"/>
+	</message>
+	<portType name="_5LB_ДляВсехБазPortType">
+		<operation name="GetPrihodUhod">
+			<input name="GetPrihodUhodRequest"
+					message="tns:GetPrihodUhodRequestMessage"/>
+			<output name="GetPrihodUhodResponse"
+					message="tns:GetPrihodUhodResponseMessage"/>
+		</operation>
+		<operation name="GetDocuments">
+			<input name="GetDocumentsRequest"
+					message="tns:GetDocumentsRequestMessage"/>
+			<output name="GetDocumentsResponse"
+					message="tns:GetDocumentsResponseMessage"/>
+		</operation>
+		<operation name="DatePrintingPriceLabels">
+			<input name="DatePrintingPriceLabelsRequest"
+					message="tns:DatePrintingPriceLabelsRequestMessage"/>
+			<output name="DatePrintingPriceLabelsResponse"
+					message="tns:DatePrintingPriceLabelsResponseMessage"/>
+		</operation>
+		<operation name="PaymentMethodsRetailSales">
+			<input name="PaymentMethodsRetailSalesRequest"
+					message="tns:PaymentMethodsRetailSalesRequestMessage"/>
+			<output name="PaymentMethodsRetailSalesResponse"
+					message="tns:PaymentMethodsRetailSalesResponseMessage"/>
+		</operation>
+		<operation name="GetPriceForNode">
+			<input name="GetPriceForNodeRequest"
+					message="tns:GetPriceForNodeRequestMessage"/>
+			<output name="GetPriceForNodeResponse"
+					message="tns:GetPriceForNodeResponseMessage"/>
+		</operation>
+		<operation name="GetOstatokNomenklatur">
+			<input name="GetOstatokNomenklaturRequest"
+					message="tns:GetOstatokNomenklaturRequestMessage"/>
+			<output name="GetOstatokNomenklaturResponse"
+					message="tns:GetOstatokNomenklaturResponseMessage"/>
+		</operation>
+		<operation name="GetTheSellerControlOfFunds">
+			<input name="GetTheSellerControlOfFundsRequest"
+					message="tns:GetTheSellerControlOfFundsRequestMessage"/>
+			<output name="GetTheSellerControlOfFundsResponse"
+					message="tns:GetTheSellerControlOfFundsResponseMessage"/>
+		</operation>
+		<operation name="DownloadOnLineCheck">
+			<input name="DownloadOnLineCheckRequest"
+					message="tns:DownloadOnLineCheckRequestMessage"/>
+			<output name="DownloadOnLineCheckResponse"
+					message="tns:DownloadOnLineCheckResponseMessage"/>
+		</operation>
+	</portType>
+	<binding name="_5LB_ДляВсехБазSoapBinding"
+			type="tns:_5LB_ДляВсехБазPortType">
+		<soapbind:binding style="document"
+				transport="http://schemas.xmlsoap.org/soap/http"/>
+		<operation name="GetPrihodUhod">
+			<soapbind:operation style="document"
+					soapAction="www.test.com#_5LB_ДляВсехБаз:GetPrihodUhod"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetDocuments">
+			<soapbind:operation style="document"
+					soapAction="www.test.com#_5LB_ДляВсехБаз:GetDocuments"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="DatePrintingPriceLabels">
+			<soapbind:operation style="document"
+					soapAction="www.test.com#_5LB_ДляВсехБаз:DatePrintingPriceLabels"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="PaymentMethodsRetailSales">
+			<soapbind:operation style="document"
+					soapAction="www.test.com#_5LB_ДляВсехБаз:PaymentMethodsRetailSales"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetPriceForNode">
+			<soapbind:operation style="document"
+					soapAction="www.test.com#_5LB_ДляВсехБаз:GetPriceForNode"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetOstatokNomenklatur">
+			<soapbind:operation style="document"
+					soapAction="www.test.com#_5LB_ДляВсехБаз:GetOstatokNomenklatur"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetTheSellerControlOfFunds">
+			<soapbind:operation style="document"
+					soapAction="www.test.com#_5LB_ДляВсехБаз:GetTheSellerControlOfFunds"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="DownloadOnLineCheck">
+			<soapbind:operation style="document"
+					soapAction="www.test.com#_5LB_ДляВсехБаз:DownloadOnLineCheck"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+	</binding>
+	<binding name="_5LB_ДляВсехБазSoap12Binding"
+			type="tns:_5LB_ДляВсехБазPortType">
+		<soap12bind:binding style="document"
+				transport="http://schemas.xmlsoap.org/soap/http"/>
+		<operation name="GetPrihodUhod">
+			<soap12bind:operation style="document"
+					soapAction="www.test.com#_5LB_ДляВсехБаз:GetPrihodUhod"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetDocuments">
+			<soap12bind:operation style="document"
+					soapAction="www.test.com#_5LB_ДляВсехБаз:GetDocuments"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="DatePrintingPriceLabels">
+			<soap12bind:operation style="document"
+					soapAction="www.test.com#_5LB_ДляВсехБаз:DatePrintingPriceLabels"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="PaymentMethodsRetailSales">
+			<soap12bind:operation style="document"
+					soapAction="www.test.com#_5LB_ДляВсехБаз:PaymentMethodsRetailSales"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetPriceForNode">
+			<soap12bind:operation style="document"
+					soapAction="www.test.com#_5LB_ДляВсехБаз:GetPriceForNode"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetOstatokNomenklatur">
+			<soap12bind:operation style="document"
+					soapAction="www.test.com#_5LB_ДляВсехБаз:GetOstatokNomenklatur"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetTheSellerControlOfFunds">
+			<soap12bind:operation style="document"
+					soapAction="www.test.com#_5LB_ДляВсехБаз:GetTheSellerControlOfFunds"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="DownloadOnLineCheck">
+			<soap12bind:operation style="document"
+					soapAction="www.test.com#_5LB_ДляВсехБаз:DownloadOnLineCheck"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+	</binding>
+	<service name="_5LB_ДляВсехБаз">
+		<port name="_5LB_ДляВсехБазSoap"
+				binding="tns:_5LB_ДляВсехБазSoapBinding">
+			<documentation> 
+				<wsi:Claim xmlns:wsi="http://ws-i.org/schemas/conformanceClaim/"
+						conformsTo="http://ws-i.org/profiles/basic/1.1"/>
+			</documentation>
+			<soapbind:address location="http://192.168.12.79/Roznica_Rab/ws/ForAll.1cws"/>
+		</port>
+		<port name="_5LB_ДляВсехБазSoap12"
+				binding="tns:_5LB_ДляВсехБазSoap12Binding">
+			<soap12bind:address location="http://192.168.12.79/Roznica_Rab/ws/ForAll.1cws"/>
+		</port>
+	</service>
+</definitions>

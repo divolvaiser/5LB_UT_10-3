@@ -1,0 +1,45 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://www.ws_5lb_cwms3000.in.ru">
+	<objectType name="DOC_IN">
+		<property name="NUMBER" type="xs:string"/>
+		<property name="INVOICE" type="xs:string"/>
+		<property name="ID_DOC" type="xs:string"/>
+		<property name="WMS_ID" type="xs:unsignedInt"/>
+		<property name="STATUS_DATE" type="xs:dateTime"/>
+		<property name="DOC_OUT_ID" type="xs:string"/>
+		<property name="DATE" type="xs:dateTime"/>
+		<property name="TYPE" type="xs:string"/>
+		<property name="STATUS" type="xs:unsignedInt"/>
+		<property name="STATUS_DSC" type="xs:string"/>
+		<property name="OLD_STATUS" type="xs:unsignedInt" lowerBound="0"/>
+		<property name="OLD_STATUS_DSC" type="xs:string" lowerBound="0"/>
+		<property name="PUT_ON_STORE_FD" type="xs:dateTime"/>
+		<property name="ID_SUPPLIER" type="xs:string"/>
+		<property xmlns:d3p1="http://www.ws_5lb_cwms3000.in.ru" name="CONTENT" type="d3p1:CODE" lowerBound="1" upperBound="-1"/>
+	</objectType>
+	<objectType name="CODE">
+		<property name="code" type="xs:string"/>
+		<property name="type" type="xs:unsignedByte"/>
+		<property name="CNT" type="xs:unsignedInt"/>
+		<property name="CNT_COND" type="xs:unsignedInt"/>
+		<property name="CNT_BRAK" type="xs:unsignedInt"/>
+		<property name="UNIT_TYPE" type="xs:unsignedInt"/>
+		<property name="EXPIRE_DATE" type="xs:dateTime"/>
+		<property name="NOM_TYPE" type="xs:unsignedInt"/>
+		<property name="NOM_COND_TYPE" type="xs:string"/>
+		<property name="NOM_BRAK_TYPE" type="xs:unsignedInt"/>
+		<property xmlns:d3p1="http://www.ws_5lb_cwms3000.in.ru" name="ST_PART" type="d3p1:ST_PART" lowerBound="0" upperBound="-1"/>
+		<property name="I_NOM_ID" type="xs:string"/>
+	</objectType>
+	<objectType name="ST_PART">
+		<property name="PART_NUM" type="xs:anyType"/>
+		<property xmlns:d3p1="http://www.ws_5lb_cwms3000.in.ru" name="EXT_PARAMS" type="d3p1:EXT_PARAM" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="EXT_PARAM">
+		<property xmlns:d3p1="http://www.ws_5lb_cwms3000.in.ru" name="PARAM" type="d3p1:ParamType" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="ParamType">
+		<property name="PARAM_NAME" type="xs:string"/>
+		<property name="PARAM_VALUE" type="xs:string"/>
+		<property name="PARAM_CAPTION" type="xs:string" lowerBound="0"/>
+	</objectType>
+</package>

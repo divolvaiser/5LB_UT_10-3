@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<Enum uuid="e5c07624-9195-4f37-9cbb-e0f1efae8710">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.EmeWms_ИспользуемыеВидыОбмена" category="Ref">
+				<xr:TypeId>52f67c28-971b-4aef-a265-8914e7fa384d</xr:TypeId>
+				<xr:ValueId>71f27fcf-6f8b-4baa-b80d-e9e4352b98dd</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.EmeWms_ИспользуемыеВидыОбмена" category="Manager">
+				<xr:TypeId>64f31b12-0da2-46ed-949c-49eafca5cb4e</xr:TypeId>
+				<xr:ValueId>46376fde-5d49-4ca8-91e7-014c146f6d52</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.EmeWms_ИспользуемыеВидыОбмена" category="List">
+				<xr:TypeId>dd812f22-c930-41e5-a7ae-b0993dabb6a4</xr:TypeId>
+				<xr:ValueId>01aa35fb-c2bb-45b7-ae0b-200c7f26245c</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>EmeWms_ИспользуемыеВидыОбмена</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Eme wms используемые виды обмена</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>Для ограничения обмена по отдельным позициям и документам</Comment>
+			<UseStandardCommands>false</UseStandardCommands>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="81be40d7-87d7-40e8-b185-283a8efc8480">
+				<Properties>
+					<Name>ПолныйОбмен</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Полный обмен с EME.WMS</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="9ad0f42f-1f69-4fe7-b1fc-378a13adb424">
+				<Properties>
+					<Name>ТолькоВыгрузкаВWMS</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Только выгрузка в EME.WMS</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="ce373c30-cc75-4c2e-a455-2b1c1275d5d0">
+				<Properties>
+					<Name>ТолькоЗагрузкаИзWMS</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Только загрузка из EME.WMS</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="046ec517-86ce-4fbb-bbce-4ca5744f0696">
+				<Properties>
+					<Name>ОбменОтключен</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обмен отключен</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

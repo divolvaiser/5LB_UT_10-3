@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<Enum uuid="4a0f0472-8218-419b-b23c-018a81f46591">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef._5LB_ИнтеграцияВидыПередаваемыхДокументов" category="Ref">
+				<xr:TypeId>6478c471-d115-4f06-a778-a459d95cc852</xr:TypeId>
+				<xr:ValueId>ed2e04d3-07d9-4c09-b8d1-d7937cbe46e3</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager._5LB_ИнтеграцияВидыПередаваемыхДокументов" category="Manager">
+				<xr:TypeId>69c24801-42a1-4aac-aa7f-46e0a4820e42</xr:TypeId>
+				<xr:ValueId>71eb664c-733a-4276-b6b6-49918f44003f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList._5LB_ИнтеграцияВидыПередаваемыхДокументов" category="List">
+				<xr:TypeId>9bbd65bc-8f06-4112-9007-72ce3d884baa</xr:TypeId>
+				<xr:ValueId>221084d7-16e4-465c-b191-eca9b413c5cb</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>_5LB_ИнтеграцияВидыПередаваемыхДокументов</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Интеграция - виды передаваемых документов (5LB)</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>Интеграция - виды передаваемых документов (5LB)</Comment>
+			<UseStandardCommands>false</UseStandardCommands>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="84819b2a-d056-4bcb-bd5f-81e8fd924f9b">
+				<Properties>
+					<Name>ПеремещениеТоваров</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Перемещение товаров</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Перемещение товаров</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="501a0e6e-de2b-43bd-b19e-c0d1c3484e30">
+				<Properties>
+					<Name>ВозвратТоваровПоставщику</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Возврат товаров поставщику</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="4f91ec8c-f7b2-4b36-a593-eec0a74a70eb">
+				<Properties>
+					<Name>ПоступлениеТоваровУслуг</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поступление товаров услуг</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

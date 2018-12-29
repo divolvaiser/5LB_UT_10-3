@@ -1,0 +1,11 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://www.DataPrice5LB/DataPrice5LB">
+	<objectType name="StructuraPrice">
+		<property name="GUIDUT10" type="xs:string"/>
+		<property name="CenaUT11" type="xs:float"/>
+		<property name="EdIzm" type="xs:string"/>
+		<property name="Koeff" type="xs:float"/>
+	</objectType>
+	<objectType name="TzPrice" open="true">
+		<property xmlns:d3p1="http://www.DataPrice5LB/DataPrice5LB" name="Element" type="d3p1:StructuraPrice" upperBound="-1"/>
+	</objectType>
+</package>

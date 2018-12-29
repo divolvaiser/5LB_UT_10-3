@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<WebService uuid="4f6e16be-b289-49dc-babc-7282fea6e2e0">
+		<Properties>
+			<Name>External_reception_warehouse</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>External reception warehouse</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>Внешнее получениео статков в разрезе склада</Comment>
+			<Namespace>www.external_reception_warehouse.com</Namespace>
+			<XDTOPackages>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="xr:MDObjectRef">XDTOPackage._5LB_external_reception_VGH</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="xr:MDObjectRef">XDTOPackage._5LB_external_reception_warehouse</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="xr:MDObjectRef">XDTOPackage._5LB_external_reception_information</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="xr:MDObjectRef">XDTOPackage._5LB_external_reception_price</xr:Value>
+				</xr:Item>
+			</XDTOPackages>
+			<DescriptorFileName>external_reception_warehouse.1cws</DescriptorFileName>
+			<ReuseSessions>DontUse</ReuseSessions>
+			<SessionMaxAge>20</SessionMaxAge>
+		</Properties>
+		<ChildObjects>
+			<Operation uuid="c5a856a2-3850-4be7-ae7d-51b24014b61a">
+				<Properties>
+					<Name>Request_balance</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Request balance</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Запросить остатки</Comment>
+					<XDTOReturningValueType>xs:string</XDTOReturningValueType>
+					<Nillable>true</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>Request_balance</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="9959f4d9-f895-4de0-b0c3-f85e01bc9036">
+						<Properties>
+							<Name>date_request</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Date request</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment>Дата на которую необходимо получить информацию</Comment>
+							<XDTOValueType xmlns:d8p1="http://www.external_reception_warehouse.out.org">d8p1:DateParametr</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="07693d3c-bd74-42a6-9c60-5cb1b280ec1c">
+						<Properties>
+							<Name>warehouse_code</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Warehouse code</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment>Внутренний идентификатор  Склада 1С</Comment>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="f141b37e-7a69-42fc-9bfe-58a9b94fd1cb">
+						<Properties>
+							<Name>product_code</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Product code</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment>Код номенклатуры 1с</Comment>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="cc1885ac-154e-45c3-a7dc-9dae8407435c">
+						<Properties>
+							<Name>ERROR</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ERROR</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment>ERROR</Comment>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>Out</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="7c90690a-3e76-470b-82a0-34f809ef742b">
+				<Properties>
+					<Name>Request_price</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Request price</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType>xs:string</XDTOReturningValueType>
+					<Nillable>true</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>Request_price</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="fe3fe813-3048-40ed-8739-0dcf57377a60">
+						<Properties>
+							<Name>date_request</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Date request</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment>Дата на которую необходимо получить информацию</Comment>
+							<XDTOValueType xmlns:d8p1="http://www.external_reception_price.out.org">d8p1:DateParametr</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="00587bb3-6edd-4e40-9e9d-6fca8b7d9153">
+						<Properties>
+							<Name>price_code</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Price code</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment>Код цены</Comment>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="a86139dd-50e1-4fa7-bf46-b9cfc73ff1c9">
+						<Properties>
+							<Name>product_code</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Product code</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment>Код номенклатуры 1с</Comment>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="f0ccc867-c034-4b6a-b6a0-26f4d72b78d3">
+						<Properties>
+							<Name>ERROR</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ERROR</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment>ERROR</Comment>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>Out</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="16e441f8-45fb-4172-ac2e-39b3ec3665a0">
+				<Properties>
+					<Name>Request_Product_VGH</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Request product VGH</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType>xs:string</XDTOReturningValueType>
+					<Nillable>true</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>Request_VGH</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="a099b9f0-087e-4991-af34-69edc64e8133">
+						<Properties>
+							<Name>product_code</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Product code</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment>Код номенклатуры 1с</Comment>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="3f45c4d6-bb27-4f77-89b5-2559c8472ef5">
+						<Properties>
+							<Name>ERROR</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ERROR</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment>ERROR</Comment>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>Out</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="cdfc8ac9-4fb1-45f6-9199-5a2dab2166f1">
+				<Properties>
+					<Name>Request_Product_information</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Request product information</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType>xs:string</XDTOReturningValueType>
+					<Nillable>true</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>Request_Product_information</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="6a6143e9-7991-4118-9bdd-2d28698e24ab">
+						<Properties>
+							<Name>date_request</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Date request</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment>Дата на которую необходимо получить информацию</Comment>
+							<XDTOValueType xmlns:d8p1="http://www.external_reception_information.out.org">d8p1:DateParametr</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="fa52800d-4853-41b9-9bdd-55b73fea3df9">
+						<Properties>
+							<Name>warehouse_code</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Warehouse code</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment>Внутренний идентификатор  Склада 1С</Comment>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="872638ca-d0a8-467a-bdbf-40c918aa39e1">
+						<Properties>
+							<Name>product_code</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Product code</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment>Код номенклатуры 1с</Comment>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="b3d53582-4da7-4a7f-9806-2c3546730105">
+						<Properties>
+							<Name>price_code</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Price code</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment>Код цены</Comment>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="4386f02a-e894-421e-b2e1-0f3a97894f72">
+						<Properties>
+							<Name>ERROR</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ERROR</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment>ERROR</Comment>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>Out</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+		</ChildObjects>
+	</WebService>
+</MetaDataObject>

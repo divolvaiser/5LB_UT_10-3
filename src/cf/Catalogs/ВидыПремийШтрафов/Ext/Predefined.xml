@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.4">
+	<Item id="c15ef12a-0615-48bf-ba81-4cebdbf3f1be">
+		<Name>Начисления</Name>
+		<Code>000000001</Code>
+		<Description>Начисления</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="ed6065e4-8583-4369-8fe7-cfe86951c9dd">
+				<Name>БонусЗапродажуПросрочки23мес</Name>
+				<Code>000000003</Code>
+				<Description>Бонус за продажу просрочки 2,3 мес</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="ad58ee3c-f40c-4d3a-b79b-6cfda95ae8e6">
+		<Name>Удержания</Name>
+		<Code>000000002</Code>
+		<Description>Удержания</Description>
+		<IsFolder>true</IsFolder>
+	</Item>
+</PredefinedData>
