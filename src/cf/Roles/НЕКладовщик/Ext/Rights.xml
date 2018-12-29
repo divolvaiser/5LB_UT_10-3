@@ -250,9 +250,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Document.АвансовыйОтчет</name>
-	</object>
-	<object>
 		<name>Constant.ИспользоватьХарактеристикиНоменклатуры</name>
 		<right>
 			<name>Read</name>
@@ -425,9 +422,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Document.ЗакрытиеЗаказовПоставщикам</name>
-	</object>
-	<object>
 		<name>Catalog.ВидыОплатЧекаККМ</name>
 		<right>
 			<name>Read</name>
@@ -452,9 +446,6 @@
 			<name>Set</name>
 			<value>true</value>
 		</right>
-	</object>
-	<object>
-		<name>Document.ФормированиеАнкет</name>
 	</object>
 	<object>
 		<name>InformationRegister.ИсторияОтветственногоПоЗаказу</name>
@@ -526,12 +517,6 @@
 			<name>View</name>
 			<value>true</value>
 		</right>
-	</object>
-	<object>
-		<name>Document.ОтражениеПоступленияТоваровИУслугНДС</name>
-	</object>
-	<object>
-		<name>Document.ПрочиеЗатраты</name>
 	</object>
 	<object>
 		<name>Constant.РазрешитьНеуникальныеШтрихкоды</name>
@@ -636,9 +621,6 @@
 			<name>InputByString</name>
 			<value>true</value>
 		</right>
-	</object>
-	<object>
-		<name>Document.ПереоценкаТоваровПринятыхНаКомиссию</name>
 	</object>
 	<object>
 		<name>Catalog.ГруппыДоступностиСкладов</name>
@@ -751,9 +733,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Document.КорректировкаЗаписейРегистров</name>
-	</object>
-	<object>
 		<name>Constant.ИспользоватьОплатуПлатежнымиКартами</name>
 		<right>
 			<name>Read</name>
@@ -854,9 +833,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Document.ВосстановлениеНДС</name>
-	</object>
-	<object>
 		<name>DocumentJournal.ЗаказыПоставщикам</name>
 		<right>
 			<name>Read</name>
@@ -866,9 +842,6 @@
 			<name>View</name>
 			<value>true</value>
 		</right>
-	</object>
-	<object>
-		<name>Document.ABCКлассификацияПокупателей</name>
 	</object>
 	<object>
 		<name>DataProcessor.ПанельФункций</name>
@@ -1084,9 +1057,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Document.КорректировкаКачестваТоваров</name>
-	</object>
-	<object>
 		<name>Report.АнализЗаказа</name>
 		<right>
 			<name>Use</name>
@@ -1096,9 +1066,6 @@
 			<name>View</name>
 			<value>true</value>
 		</right>
-	</object>
-	<object>
-		<name>Document.ПланируемоеПоступлениеДенежныхСредств</name>
 	</object>
 	<object>
 		<name>ChartOfCharacteristicTypes.НазначенияСвойствКатегорийОбъектов</name>
@@ -1140,9 +1107,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Document.РаспределениеНДСКосвенныхРасходов</name>
-	</object>
-	<object>
 		<name>Constant.ПрефиксШтучногоТовара</name>
 		<right>
 			<name>Read</name>
@@ -1160,9 +1124,6 @@
 			<name>Edit</name>
 			<value>true</value>
 		</right>
-	</object>
-	<object>
-		<name>Document.УстановкаЗначенийТочкиЗаказа</name>
 	</object>
 	<object>
 		<name>Catalog.Кассы</name>
@@ -1202,9 +1163,6 @@
 			<name>InputByString</name>
 			<value>true</value>
 		</right>
-	</object>
-	<object>
-		<name>Document.ЗаявкаНаРасходованиеСредств</name>
 	</object>
 	<object>
 		<name>InformationRegister.ЗаявкаВТК</name>
@@ -1353,9 +1311,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Document.КорректировкаСерийИХарактеристикТоваров</name>
-	</object>
-	<object>
 		<name>AccumulationRegister.НДСНачисленный</name>
 		<right>
 			<name>Read</name>
@@ -1424,9 +1379,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Document.ВозвратТоваровОтПокупателя</name>
-	</object>
-	<object>
 		<name>InformationRegister.ВозвратыДопДанные</name>
 		<right>
 			<name>Read</name>
@@ -1488,9 +1440,6 @@
 			<name>Edit</name>
 			<value>true</value>
 		</right>
-	</object>
-	<object>
-		<name>Document.ПодтверждениеНулевойСтавкиНДС</name>
 	</object>
 	<object>
 		<name>AccumulationRegister.ПланыЗакупок</name>
@@ -1733,9 +1682,6 @@
 			<name>InputByString</name>
 			<value>true</value>
 		</right>
-	</object>
-	<object>
-		<name>Document.ВнутреннееПеремещениеНаличныхДенежныхСредств</name>
 	</object>
 	<object>
 		<name>InformationRegister.РегламентированныйПроизводственныйКалендарь</name>
@@ -2064,12 +2010,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Document.РеестрСчетов</name>
-	</object>
-	<object>
-		<name>Document.ТребованиеНакладная</name>
-	</object>
-	<object>
 		<name>InformationRegister.СписанныеТовары</name>
 		<right>
 			<name>Read</name>
@@ -2168,9 +2108,6 @@
 			<name>InputByString</name>
 			<value>true</value>
 		</right>
-	</object>
-	<object>
-		<name>Document.ПереоценкаТоваровОтданныхНаКомиссию</name>
 	</object>
 	<object>
 		<name>Catalog.РолиКонтактныхЛиц</name>
@@ -2335,9 +2272,6 @@
 			<name>InputByString</name>
 			<value>true</value>
 		</right>
-	</object>
-	<object>
-		<name>Document.ОтчетОРозничныхПродажах</name>
 	</object>
 	<object>
 		<name>InformationRegister.СкидкиНоменклатурыНатуральные</name>
@@ -2713,9 +2647,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Document.ЗакрытиеПланируемыхПоступленийДенежныхСредств</name>
-	</object>
-	<object>
 		<name>InformationRegister.УсловияПоставокПоДоговорамКонтрагентовОбщие</name>
 		<right>
 			<name>Read</name>
@@ -2974,9 +2905,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Document.ЗакрытиеЗаказовПокупателей</name>
-	</object>
-	<object>
 		<name>InformationRegister.НоменклатураКонтрагентов</name>
 		<right>
 			<name>Read</name>
@@ -3080,9 +3008,6 @@
 			<name>InputByString</name>
 			<value>true</value>
 		</right>
-	</object>
-	<object>
-		<name>Document.ПоступлениеТоваровУслуг</name>
 	</object>
 	<object>
 		<name>Catalog.Помещения</name>
@@ -3346,9 +3271,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Document.ОприходованиеТоваров</name>
-	</object>
-	<object>
 		<name>InformationRegister.Штрихкоды</name>
 		<right>
 			<name>Read</name>
@@ -3455,9 +3377,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Document.ИнвентаризацияТоваровОтданныхНаКомиссию</name>
-	</object>
-	<object>
 		<name>Report.УниверсальныйОтчет</name>
 		<right>
 			<name>Use</name>
@@ -3469,17 +3388,11 @@
 		</right>
 	</object>
 	<object>
-		<name>Document.КорректировкаСтоимостиСписанияТоваров</name>
-	</object>
-	<object>
 		<name>CommonForm.УстановкаДатыЗапретаИзмененияДанных</name>
 		<right>
 			<name>View</name>
 			<value>true</value>
 		</right>
-	</object>
-	<object>
-		<name>Document.Опрос</name>
 	</object>
 	<object>
 		<name>AccumulationRegister.ПланируемыеПоступленияДенежныхСредств</name>
@@ -3647,9 +3560,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Document.ПриходныйОрдерНаТовары</name>
-	</object>
-	<object>
 		<name>Report.ОтчетСписокКроссТаблица</name>
 		<right>
 			<name>Use</name>
@@ -3691,9 +3601,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Document.РеализацияТоваровУслуг</name>
-	</object>
-	<object>
 		<name>CommonForm.РезультатыПроведения</name>
 		<right>
 			<name>View</name>
@@ -3722,9 +3629,6 @@
 			<name>TotalsControl</name>
 			<value>true</value>
 		</right>
-	</object>
-	<object>
-		<name>Document.СчетНаОплатуПоставщика</name>
 	</object>
 	<object>
 		<name>Catalog.Территории</name>
@@ -3842,9 +3746,6 @@
 			<name>View</name>
 			<value>true</value>
 		</right>
-	</object>
-	<object>
-		<name>Document.РазмещениеЗаказа</name>
 	</object>
 	<object>
 		<name>CommonForm.ВыборБонуснойНоменклатуры</name>
@@ -4067,9 +3968,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Document.КлассификацияПокупателейПоСтадиямВзаимоотношений</name>
-	</object>
-	<object>
 		<name>AccumulationRegister.ПартииТоваровПереданные</name>
 		<right>
 			<name>Read</name>
@@ -4229,12 +4127,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Document.УстановкаСкидокНоменклатуры</name>
-	</object>
-	<object>
-		<name>Document.СчетНаОплатуПокупателю</name>
-	</object>
-	<object>
 		<name>Constant.ПрефиксВнутреннегоШтрихкода</name>
 		<right>
 			<name>Read</name>
@@ -4302,9 +4194,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Document.ЗакрытиеЗаявокНаРасходованиеСредств</name>
-	</object>
-	<object>
 		<name>SessionParameter.ОткладыватьТранзакцииSailPlay</name>
 		<right>
 			<name>Get</name>
@@ -4356,9 +4245,6 @@
 			<name>Edit</name>
 			<value>true</value>
 		</right>
-	</object>
-	<object>
-		<name>Document.ПереоценкаВалютныхСредств</name>
 	</object>
 	<object>
 		<name>AccumulationRegister.ДопРасходыНаПриобретениеТоваров</name>
@@ -4632,9 +4518,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Document.ПланЗакупок</name>
-	</object>
-	<object>
 		<name>InformationRegister.ЗначенияСвойствОбъектов</name>
 		<right>
 			<name>Read</name>
@@ -4841,9 +4724,6 @@
 			<name>Edit</name>
 			<value>true</value>
 		</right>
-	</object>
-	<object>
-		<name>Document.ФормированиеПотребностей</name>
 	</object>
 	<object>
 		<name>ChartOfCharacteristicTypes.ПраваПользователей</name>
@@ -5055,12 +4935,6 @@
 			<name>InputByString</name>
 			<value>true</value>
 		</right>
-	</object>
-	<object>
-		<name>Document.РегистрацияОплатыОтПокупателейДляНДС</name>
-	</object>
-	<object>
-		<name>Document.ВозвратТоваровПоставщику</name>
 	</object>
 	<object>
 		<name>InformationRegister.МестаХраненияНоменклатуры</name>
@@ -5338,9 +5212,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Document.ЗаказПоставщику</name>
-	</object>
-	<object>
 		<name>Constant.ВидТелефонаКонтрагента</name>
 		<right>
 			<name>Read</name>
@@ -5438,9 +5309,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Document.КомплектацияНоменклатуры</name>
-	</object>
-	<object>
 		<name>DataProcessor.ПолучениеФайловИзИнтернета</name>
 		<right>
 			<name>Use</name>
@@ -5489,9 +5357,6 @@
 			<name>InputByString</name>
 			<value>true</value>
 		</right>
-	</object>
-	<object>
-		<name>Document.СписаниеТоваров</name>
 	</object>
 	<object>
 		<name>AccumulationRegister.НДСПартииТоваров</name>
@@ -5680,9 +5545,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Document.ПереоценкаТоваровВРознице</name>
-	</object>
-	<object>
 		<name>AccumulationRegister.ДенежныеСредстваКСписанию</name>
 		<right>
 			<name>Read</name>
@@ -5723,9 +5585,6 @@
 			<name>Edit</name>
 			<value>true</value>
 		</right>
-	</object>
-	<object>
-		<name>Catalog.Контрагенты</name>
 	</object>
 	<object>
 		<name>AccumulationRegister.НДСРасчетыСПоставщиками</name>
@@ -5950,9 +5809,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Document.РасходныйОрдерНаТовары</name>
-	</object>
-	<object>
 		<name>Constant.ТипЦенПлановойСебестоимостиНоменклатуры</name>
 		<right>
 			<name>Read</name>
@@ -6051,9 +5907,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Document.ОбъявлениеНаВзносНаличными</name>
-	</object>
-	<object>
 		<name>Document.ЗаказПокупателя</name>
 		<right>
 			<name>Read</name>
@@ -6115,9 +5968,6 @@
 			<name>View</name>
 			<value>true</value>
 		</right>
-	</object>
-	<object>
-		<name>Document.ДенежныйЧек</name>
 	</object>
 	<object>
 		<name>InformationRegister.СобственныеКонтрагенты</name>
@@ -6282,9 +6132,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Document.УстановкаЦенНоменклатуры</name>
-	</object>
-	<object>
 		<name>Catalog.Склады</name>
 		<right>
 			<name>Read</name>
@@ -6410,9 +6257,6 @@
 			<name>Edit</name>
 			<value>true</value>
 		</right>
-	</object>
-	<object>
-		<name>Document.Доверенность</name>
 	</object>
 	<object>
 		<name>Catalog.КлассификаторСтранМира</name>
@@ -6561,12 +6405,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Document.ОтражениеРеализацииТоваровИУслугНДС</name>
-	</object>
-	<object>
-		<name>Document.Событие</name>
-	</object>
-	<object>
 		<name>AccumulationRegister.ТоварыВРезервеНаСкладах</name>
 		<right>
 			<name>Read</name>
@@ -6630,9 +6468,6 @@
 			<name>TotalsControl</name>
 			<value>true</value>
 		</right>
-	</object>
-	<object>
-		<name>Document.СчетФактураПолученный</name>
 	</object>
 	<object>
 		<name>InformationRegister.ЦеныАТТ</name>
@@ -6755,9 +6590,6 @@
 			<name>Read</name>
 			<value>true</value>
 		</right>
-	</object>
-	<object>
-		<name>Document.РезервированиеТоваров</name>
 	</object>
 	<object>
 		<name>Constant.ПрименятьДатуЗапретаДляПолныхПрав</name>
@@ -7015,9 +6847,6 @@
 			<name>View</name>
 			<value>true</value>
 		</right>
-	</object>
-	<object>
-		<name>Document.ПланПродаж</name>
 	</object>
 	<object>
 		<name>DataProcessor.ВводСерийныхНомеров</name>
@@ -7592,9 +7421,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Document.ОтменаСкидокНоменклатуры</name>
-	</object>
-	<object>
 		<name>InformationRegister.АдресныйКлассификатор</name>
 		<right>
 			<name>Read</name>
@@ -7612,12 +7438,6 @@
 			<name>Edit</name>
 			<value>true</value>
 		</right>
-	</object>
-	<object>
-		<name>Document.РегистрацияОплатыПоставщикуДляНДС</name>
-	</object>
-	<object>
-		<name>Document.СчетФактураВыданный</name>
 	</object>
 	<object>
 		<name>SessionParameter.ОбщиеЗначения</name>
@@ -7655,9 +7475,6 @@
 			<name>Update</name>
 			<value>true</value>
 		</right>
-	</object>
-	<object>
-		<name>Document.ИнвентаризацияТоваровНаСкладе</name>
 	</object>
 	<object>
 		<name>DataProcessor.ПакетныйВводДокументов</name>
@@ -8026,9 +7843,6 @@
 			<name>TotalsControl</name>
 			<value>true</value>
 		</right>
-	</object>
-	<object>
-		<name>Document.ЭлектронноеПисьмо</name>
 	</object>
 	<object>
 		<name>DocumentJournal.Ценообразование</name>

@@ -3923,7 +3923,7 @@
 				<d3p1:bottom>0</d3p1:bottom>
 			</d3p1:elementsLegend>
 			<d3p1:elementsTitle>
-				<d3p1:left>0.874251497005987</d3p1:left>
+				<d3p1:left>0.874251497005986</d3p1:left>
 				<d3p1:right>0</d3p1:right>
 				<d3p1:top>0</d3p1:top>
 				<d3p1:bottom>0.75</d3p1:bottom>
@@ -4311,7 +4311,7 @@
 			</d3p1:elementsLegend>
 			<d3p1:elementsTitle>
 				<d3p1:left>0.8841201716738191</d3p1:left>
-				<d3p1:right>0.07010014306151639</d3p1:right>
+				<d3p1:right>0.0701001430615163</d3p1:right>
 				<d3p1:top>0.08562691131498471</d3p1:top>
 				<d3p1:bottom>0.816513761467889</d3p1:bottom>
 			</d3p1:elementsTitle>
@@ -5183,7 +5183,7 @@
 			<d3p1:chartIsInit>false</d3p1:chartIsInit>
 			<d3p1:elementsChart>
 				<d3p1:left>0</d3p1:left>
-				<d3p1:right>0.547169811320754</d3p1:right>
+				<d3p1:right>0.547169811320753</d3p1:right>
 				<d3p1:top>0</d3p1:top>
 				<d3p1:bottom>0</d3p1:bottom>
 			</d3p1:elementsChart>

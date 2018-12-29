@@ -12044,9 +12044,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Document.ЗаказПокупателя</name>
-	</object>
-	<object>
 		<name>Report.СравнениеЦенАТТиЦенНоменклатуры</name>
 		<right>
 			<name>Use</name>

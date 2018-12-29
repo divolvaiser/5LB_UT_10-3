@@ -305,9 +305,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Document.АвансовыйОтчет</name>
-	</object>
-	<object>
 		<name>Constant.ИспользоватьХарактеристикиНоменклатуры</name>
 		<right>
 			<name>Read</name>
@@ -1281,9 +1278,6 @@
 			<name>Edit</name>
 			<value>true</value>
 		</right>
-	</object>
-	<object>
-		<name>Document.УсловияПоставокПоДоговорамКонтрагентов</name>
 	</object>
 	<object>
 		<name>AccumulationRegister.РазмещениеЗаказовПокупателей</name>
@@ -2966,9 +2960,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Document.ПоступлениеДопРасходов</name>
-	</object>
-	<object>
 		<name>Report.ВедомостьТоварыИГТДОрганизаций</name>
 		<right>
 			<name>Use</name>
@@ -3661,9 +3652,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Document.ГТДИмпорт</name>
-	</object>
-	<object>
 		<name>Document.СписаниеТоваров.TabularSection.ВозвратнаяТара.Attribute.ДокументРезерва</name>
 		<right>
 			<name>Edit</name>
@@ -4265,9 +4253,6 @@
 			<name>Read</name>
 			<value>true</value>
 		</right>
-	</object>
-	<object>
-		<name>Document.ИзменениеЛимитовВозвратнойТары</name>
 	</object>
 	<object>
 		<name>Document.ЗакрытиеПланируемыхПоступленийДенежныхСредств</name>
@@ -9106,9 +9091,6 @@
 			<name>Edit</name>
 			<value>false</value>
 		</right>
-	</object>
-	<object>
-		<name>Catalog.Контрагенты</name>
 	</object>
 	<object>
 		<name>Document.ОприходованиеТоваров.TabularSection.Товары.Attribute.Качество</name>

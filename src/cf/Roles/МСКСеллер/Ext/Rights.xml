@@ -14680,9 +14680,6 @@
 		</right>
 	</object>
 	<object>
-		<name>AccumulationRegister.ПартииТоваровНаСкладах</name>
-	</object>
-	<object>
 		<name>Document.ЭлектронноеПисьмо</name>
 		<right>
 			<name>Read</name>

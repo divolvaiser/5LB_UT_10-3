@@ -488,7 +488,7 @@
 			<d3p1:rebuildTime>0</d3p1:rebuildTime>
 			<d3p1:isTransposed>false</d3p1:isTransposed>
 			<d3p1:autoTransposition>false</d3p1:autoTransposition>
-			<d3p1:legendScrollEnable>true</d3p1:legendScrollEnable>
+			<d3p1:legendScrollEnable>false</d3p1:legendScrollEnable>
 			<d3p1:surfaceColor>#A90000</d3p1:surfaceColor>
 			<d3p1:radarScaleType>Circle</d3p1:radarScaleType>
 			<d3p1:gaugeValuesPresentation>Needle</d3p1:gaugeValuesPresentation>

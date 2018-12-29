@@ -264,7 +264,6 @@
 							<EnableStartDrag>true</EnableStartDrag>
 							<DataPath>ЦеныНоменклатурыПоставщиков</DataPath>
 							<RowPictureDataPath>ЦеныНоменклатурыПоставщиков.DefaultPicture</RowPictureDataPath>
-							<CommandSet/>
 							<SearchStringLocation>None</SearchStringLocation>
 							<ViewStatusLocation>None</ViewStatusLocation>
 							<SearchControlLocation>None</SearchControlLocation>

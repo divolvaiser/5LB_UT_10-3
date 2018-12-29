@@ -346,7 +346,6 @@
 							<EnableStartDrag>true</EnableStartDrag>
 							<DataPath>СписокПоНоменклатуре</DataPath>
 							<RowPictureDataPath>СписокПоНоменклатуре.DefaultPicture</RowPictureDataPath>
-							<CommandSet/>
 							<SearchStringLocation>None</SearchStringLocation>
 							<ViewStatusLocation>None</ViewStatusLocation>
 							<SearchControlLocation>None</SearchControlLocation>

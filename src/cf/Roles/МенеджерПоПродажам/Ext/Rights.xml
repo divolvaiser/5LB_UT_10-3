@@ -12803,9 +12803,6 @@
 		</right>
 	</object>
 	<object>
-		<name>AccumulationRegister.ПродажиПоДисконтнымКартам</name>
-	</object>
-	<object>
 		<name>Report.Продажи.Attribute.ВыводитьПродажи</name>
 		<right>
 			<name>View</name>

@@ -67,9 +67,6 @@
 		</right>
 	</object>
 	<object>
-		<name>InformationRegister.ПредметыЭлектронныхПисем</name>
-	</object>
-	<object>
 		<name>Catalog.ВидыВзаиморасчетов</name>
 		<right>
 			<name>InteractiveDelete</name>
@@ -3236,9 +3233,6 @@
 			<name>InteractiveDeleteMarkedPredefinedData</name>
 			<value>false</value>
 		</right>
-	</object>
-	<object>
-		<name>InformationRegister.КонтактнаяИнформация</name>
 	</object>
 	<object>
 		<name>Catalog._ХарактеристикиНоменклатуры_УТ11</name>

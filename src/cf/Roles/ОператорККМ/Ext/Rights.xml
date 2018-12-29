@@ -925,9 +925,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Document.ПереоценкаТоваровПринятыхНаКомиссию</name>
-	</object>
-	<object>
 		<name>Document.УстановкаТиповЦенПоГруппамНоменклатурыДляПокупателей</name>
 		<right>
 			<name>Read</name>
@@ -1496,9 +1493,6 @@
 			<name>InputByString</name>
 			<value>true</value>
 		</right>
-	</object>
-	<object>
-		<name>Document.ПеремещениеТоваров</name>
 	</object>
 	<object>
 		<name>CommonForm.РедактированиеДокументаУдостоверяющегоЛичность</name>
@@ -3230,9 +3224,6 @@
 			<name>InputByString</name>
 			<value>true</value>
 		</right>
-	</object>
-	<object>
-		<name>Document.ПереоценкаТоваровОтданныхНаКомиссию</name>
 	</object>
 	<object>
 		<name>Catalog.РолиКонтактныхЛиц</name>
@@ -8246,9 +8237,6 @@
 			<name>Edit</name>
 			<value>true</value>
 		</right>
-	</object>
-	<object>
-		<name>Catalog.КонтактныеЛица</name>
 	</object>
 	<object>
 		<name>Constant.ЛогироватьПроцессСборки</name>
