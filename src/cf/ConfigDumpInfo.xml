@@ -7744,8 +7744,8 @@
 			<Metadata name="Document._5LB_ПриходныйОрдерНаТовары.TabularSection.Товары" id="b38925ae-2b2c-4f39-bbd5-382bf4422ada"/>
 			<Metadata name="Document._5LB_ПриходныйОрдерНаТовары.Attribute.СкладПолучатель" id="e66d880a-605b-4c12-90cb-f40e1df01c04"/>
 		</Metadata>
-		<Metadata name="Document._5LB_ПриходныйОрдерНаТовары.Form.ФормаДокумента" id="b889634c-d371-4a68-be52-27ef2875a4c5" configVersion="52a8aa742b50a845bb86c7cc4c36b5f600000000"/>
-		<Metadata name="Document._5LB_ПриходныйОрдерНаТовары.Form.ФормаДокумента.Form" id="b889634c-d371-4a68-be52-27ef2875a4c5.0" configVersion="6a58665ab956fb4e955a651ef4a8c48b00000000"/>
+		<Metadata name="Document._5LB_ПриходныйОрдерНаТовары.Form.ФормаДокумента" id="b889634c-d371-4a68-be52-27ef2875a4c5" configVersion="d6abfeedb0fca54f8e2860b8386b590600000000"/>
+		<Metadata name="Document._5LB_ПриходныйОрдерНаТовары.Form.ФормаДокумента.Form" id="b889634c-d371-4a68-be52-27ef2875a4c5.0" configVersion="ec4e35540849824f9d7058ba856bc0d800000000"/>
 		<Metadata name="Document._5LB_РасходныйОрдерНаТовары" id="b7210e26-2c49-4383-b09b-f87b28342fb0" configVersion="ef189c4a8e8e2544a1e9a6f068c7010500000000">
 			<Metadata name="Document._5LB_РасходныйОрдерНаТовары.TabularSection.Товары" id="1e500f14-01d4-4532-8b9d-1855020a091b"/>
 			<Metadata name="Document._5LB_РасходныйОрдерНаТовары.TabularSection.Товары.Attribute.ЕдиницаИзмерения" id="2ff63298-e423-4cd8-a7b0-f2df815229bc"/>
